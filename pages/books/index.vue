@@ -14,7 +14,7 @@
               <!-- Title and excerpt -->
               <div class="text-center md:text-left">
                 <h1 class="h1 mb-4" data-aos="fade-up">Books I Highly Recommend</h1>
-                <p class="text-xl text-gray-400" data-aos="fade-up" data-aos-delay="200">I learned a lot from these, hopefully you can apply them to your life.</p>
+                <p class="text-xl text-gray-400" data-aos="fade-up" data-aos-delay="200">I learned a lot from these, hopefully you can apply them to your life. In no particular order...</p>
               </div>
               <!-- Article meta -->
               <div class="md:flex md:items-center md:justify-between mt-3">
@@ -50,42 +50,93 @@
               <img class="w-full" :src="require('~/assets/mybooks.jpg')" width="1024" height="576" alt="News single" />
             </figure> -->
 
+            <h4 class="h4 text-gray-200 mb-2">Atomic Habits</h4>
+            <h5 class="h5 text-gray-200 mb-2">James Clear</h5>
             <a target="_blank"  href="https://www.amazon.com/gp/product/0735211299/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0735211299&linkCode=as2&tag=akinhwan07-20&linkId=9da8c5f31f43f3a02804cec0192b0263"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=0735211299&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=akinhwan07-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=akinhwan07-20&l=am2&o=1&a=0735211299" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
 
+            <br>
+            <h4 class="h4 text-gray-200 mb-2">The Bhagavad Gita</h4>
+            <h5 class="h5 text-gray-200 mb-2">Translated by Eknath Easwaran</h5>
             <a target="_blank"  href="https://www.amazon.com/gp/product/1586380192/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1586380192&linkCode=as2&tag=akinhwan07-20&linkId=0b454985b343655471d2c83acdb52e0d"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=1586380192&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=akinhwan07-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=akinhwan07-20&l=am2&o=1&a=1586380192" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
 
-
-
+            <br>
+            <h4 class="h4 text-gray-200 mb-2">The Courage to be Disliked</h4>
+            <h5 class="h5 text-gray-200 mb-2">Ichiro Kishimi and Fumitake Koga</h5>
             <a target="_blank"  href="https://www.amazon.com/gp/product/1501197274/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1501197274&linkCode=as2&tag=akinhwan07-20&linkId=4dbd7a3f900585a135dc369b95974faf"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=1501197274&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=akinhwan07-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=akinhwan07-20&l=am2&o=1&a=1501197274" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
 
+            <br>
+            <h4 class="h4 text-gray-200 mb-2">Never Split the Difference</h4>
+            <h5 class="h5 text-gray-200 mb-2">Chris Voss</h5>
             <a target="_blank"  href="https://www.amazon.com/gp/product/0062407805/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0062407805&linkCode=as2&tag=akinhwan07-20&linkId=19acfaa8889d5454c583a12f1077c9d5"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=0062407805&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=akinhwan07-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=akinhwan07-20&l=am2&o=1&a=0062407805" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
 
+            <br>
+            <h4 class="h4 text-gray-200 mb-2">Influence</h4>
+            <h5 class="h5 text-gray-200 mb-2">Robert Cialdini</h5>
             <a target="_blank"  href="https://www.amazon.com/gp/product/006124189X/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=006124189X&linkCode=as2&tag=akinhwan07-20&linkId=e98eb2be400279b31b0d331ef1f753a9"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=006124189X&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=akinhwan07-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=akinhwan07-20&l=am2&o=1&a=006124189X" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
 
+            <br>
+            <h4 class="h4 text-gray-200 mb-2">How Innovation Works</h4>
+            <h5 class="h5 text-gray-200 mb-2">Matt Ridley</h5>
             <a target="_blank"  href="https://www.amazon.com/gp/product/0062916599/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0062916599&linkCode=as2&tag=akinhwan07-20&linkId=0a838eccfe46cb105cfad213840bd4e0"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=0062916599&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=akinhwan07-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=akinhwan07-20&l=am2&o=1&a=0062916599" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
 
+            <br>
+            <h4 class="h4 text-gray-200 mb-2">Decisive</h4>
+            <h5 class="h5 text-gray-200 mb-2">Chip & Dan Heath</h5>
             <a target="_blank"  href="https://www.amazon.com/gp/product/B017MYIB16/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B017MYIB16&linkCode=as2&tag=akinhwan07-20&linkId=9d9d83aa3db4178934fef1bfe7b7a791"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=B017MYIB16&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=akinhwan07-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=akinhwan07-20&l=am2&o=1&a=B017MYIB16" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
 
+            <br>
+            <h4 class="h4 text-gray-200 mb-2">The Innovation Stack</h4>
+            <h5 class="h5 text-gray-200 mb-2">Jim McKelvey</h5>
             <a target="_blank"  href="https://www.amazon.com/gp/product/0593086732/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0593086732&linkCode=as2&tag=akinhwan07-20&linkId=1337255dd2ec2ec3c13d6b50a463213f"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=0593086732&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=akinhwan07-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=akinhwan07-20&l=am2&o=1&a=0593086732" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
 
+            <br>
+            <h4 class="h4 text-gray-200 mb-2">The Psychology of Money</h4>
+            <h5 class="h5 text-gray-200 mb-2">Morgan Housel</h5>
             <a target="_blank"  href="https://www.amazon.com/gp/product/0857197681/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0857197681&linkCode=as2&tag=akinhwan07-20&linkId=3ab1a76a2660a04eae2533fb4d15033c"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=0857197681&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=akinhwan07-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=akinhwan07-20&l=am2&o=1&a=0857197681" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
 
+            <br>
+            <h4 class="h4 text-gray-200 mb-2">Direct Truth</h4>
+            <h5 class="h5 text-gray-200 mb-2">Kapil Gupta</h5>
             <a target="_blank"  href="https://www.amazon.com/gp/product/1724334417/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1724334417&linkCode=as2&tag=akinhwan07-20&linkId=e9cd9b59e57f756c68d3383c0cd6d1a4"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=1724334417&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=akinhwan07-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=akinhwan07-20&l=am2&o=1&a=1724334417" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+            
+            <br>
+            <h4 class="h4 text-gray-200 mb-2">The Practice</h4>
+            <h5 class="h5 text-gray-200 mb-2">Seth Godin</h5>
             <a target="_blank"  href="https://www.amazon.com/gp/product/0593328973/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0593328973&linkCode=as2&tag=akinhwan07-20&linkId=93d50cabbcb3097a94b0da5969113dd0"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=0593328973&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=akinhwan07-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=akinhwan07-20&l=am2&o=1&a=0593328973" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
 
+            <br>
+            <h4 class="h4 text-gray-200 mb-2">Rediscovering Life: Awaken to Reality</h4>
+            <h5 class="h5 text-gray-200 mb-2">Anthony de Mello</h5>
             <a target="_blank"  href="https://www.amazon.com/gp/product/030798494X/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=030798494X&linkCode=as2&tag=akinhwan07-20&linkId=337b5e76630914f3ec3a34c38798b826"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=030798494X&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=akinhwan07-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=akinhwan07-20&l=am2&o=1&a=030798494X" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
 
+            <br>
+            <h4 class="h4 text-gray-200 mb-2">All I Want To Know Is Where I'm Going To Die So I'll Never Go There: Buffett & Munger – A Study in Simplicity and Uncommon, Common Sense </h4>
+            <h5 class="h5 text-gray-200 mb-2">Peter Bevelin</h5>
             <a target="_blank"  href="https://www.amazon.com/gp/product/1681840480/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1681840480&linkCode=as2&tag=akinhwan07-20&linkId=5324aa0feba7f8cd16369ca17825f426"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=1681840480&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=akinhwan07-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=akinhwan07-20&l=am2&o=1&a=1681840480" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
 
-
+            <br>
+            <h4 class="h4 text-gray-200 mb-2">The Hard Thing About Hard Things: Building a Business When There Are No Easy Answers</h4>
+            <h5 class="h5 text-gray-200 mb-2">Ben Horowitz</h5>
             <a target="_blank"  href="https://www.amazon.com/gp/product/0062273205/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0062273205&linkCode=as2&tag=akinhwan07-20&linkId=4e846971def852fb30ba425e5d934f64"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=0062273205&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=akinhwan07-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=akinhwan07-20&l=am2&o=1&a=0062273205" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
 
+            <br>
+            <h4 class="h4 text-gray-200 mb-2">Indistractable: How to Control Your Attention and Choose Your Life</h4>
+            <h5 class="h5 text-gray-200 mb-2">Nir Eyal</h5>
             <a target="_blank"  href="https://www.amazon.com/gp/product/194883653X/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=194883653X&linkCode=as2&tag=akinhwan07-20&linkId=421bafe4f1bce6666b032b269a95d1e0"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=194883653X&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=akinhwan07-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=akinhwan07-20&l=am2&o=1&a=194883653X" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
 
+            <br>
+            <h4 class="h4 text-gray-200 mb-2">Hooked: How to Build Habit-Forming Products </h4>
+            <h5 class="h5 text-gray-200 mb-2">Nir Eyal</h5>
             <a target="_blank"  href="https://www.amazon.com/gp/product/1591847788/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1591847788&linkCode=as2&tag=akinhwan07-20&linkId=efd1cb8adb4594f3a85d8b2701802008"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=1591847788&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=akinhwan07-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=akinhwan07-20&l=am2&o=1&a=1591847788" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
 
+            <br>
+            <h4 class="h4 text-gray-200 mb-2">The Almanack of Naval Ravikant</h4>
+            <h5 class="h5 text-gray-200 mb-2">Eric Jorgensen</h5>
             <a target="_blank"  href="https://www.amazon.com/gp/product/1544514212/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1544514212&linkCode=as2&tag=akinhwan07-20&linkId=7613bf314a4e626af1d3e1ed88828d45"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=1544514212&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=akinhwan07-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=akinhwan07-20&l=am2&o=1&a=1544514212" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
 
+            <br>
+            <h4 class="h4 text-gray-200 mb-2">Principles</h4>
+            <h5 class="h5 text-gray-200 mb-2">Ray Dalio</h5>
             <a target="_blank"  href="https://www.amazon.com/gp/product/1501124021/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1501124021&linkCode=as2&tag=akinhwan07-20&linkId=0f7f1ff076f8f29e6acff23610c9fe22"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=1501124021&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=akinhwan07-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=akinhwan07-20&l=am2&o=1&a=1501124021" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
 
             

@@ -88,48 +88,48 @@
               </p> -->
 
               <h4 class="h4 text-gray-200 mb-4">Creator Lab</h4>
-              <h5 class="h5">Bilal Zaidi</h5>
+              <h5 class="h5 text-gray-200">Bilal Zaidi</h5>
               <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSN8K30NHARfg6ypmCPsy8g3frUJSw5gxjy6WNfPS6rlrhfeng" alt="">
               <p class="mb-8">
                 Conversations with leading entrepreneurs, non-profit founders, award winning designers, educators, artists and everything else in between. We dig deep into their stories, have honest conversations about how they made their ideas come to life and the lessons learned along the way.
               </p>
               <h4 class="h4 text-gray-200 mb-4">Invest Like the Best</h4>
-              <h5 class="h5">Patrick O'Shaughnessy</h5>
+              <h5 class="h5 text-gray-200">Patrick O'Shaughnessy</h5>
               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRjMd862AxGtesrbLZrkpVYk5n1r4PPjyW3e3wW9yYjnDiWP3K" alt="">
               <p class="mb-8">
                 Exploring the ideas, methods, and stories of people that will help you better invest your time and money. Learn more and stay-up-to-date at InvestorFieldGuide.com
               </p>
               <h4 class="h4 text-gray-200 mb-4">The Brandon Zhang Show
 </h4>
-              <h5 class="h5">Brandon Zhang</h5>
+              <h5 class="h5 text-gray-200">Brandon Zhang</h5>
               <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTfARjC7Bgu7mb5lQpvgQdn3YgVBP08a-V7rJ0gI-t-UDw4jYg" alt="">
               <p class="mb-8">
                 An exploration of the toolboxes of the amazing people leveraging the internet to build audiences, foster growth, and generate wealth. The guests diverge in some areas, but converge in others, displaying the shared traits that lead to success. Every week, host Brandon Zhang aims to uncover the guest's path to success and question them on the topics they know best. Past guests have included David Perell, Jack Butcher and Anthony Pompliano.
               </p>
               <h4 class="h4 text-gray-200 mb-4">Deep Questions
 </h4>
-              <h5 class="h5">Cal Newport</h5>
+              <h5 class="h5 text-gray-200">Cal Newport</h5>
               <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQNbiAgarhayxyaeE_QQ7G3uOXQXfYx1SgCkBGpArW_jgH5QlV-" alt="">
               <p class="mb-8">
                 Cal Newport is a computer science professor and the New York Times bestselling author of Digital Minimalism and Deep Work. He writes about technology and the way it can both support and impede our efforts to live more meaningful, productive lives. In this podcast, he answers questions from his readers about work, technology, and the deep life.
               </p>
               <h4 class="h4 text-gray-200 mb-4">The NFX Podcast
 </h4>
-              <h5 class="h5">NFX</h5>
+              <h5 class="h5 text-gray-200">NFX</h5>
               <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2p7ZeY9WkIPVg12-uwyIpK6SES_RSOXbuI61JKtGuXfOle_g" alt="">
               <p class="mb-8">
                 We believe creating something of true significance starts with seeing things others do not.
               </p>
               <h4 class="h4 text-gray-200 mb-4">North Star Podcast
 </h4>
-              <h5 class="h5">David Perell</h5>
+              <h5 class="h5 text-gray-200">David Perell</h5>
               <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSGJM5rg9b5UTGw3CwPHcyeiYB60TW5qmSd5io7AidQL2kNQwr3" alt="">
               <p class="mb-8">
                 A deep dive into the stories, habits, ideas, strategies and methods that drive fulfilled people and create enormous success for them. The guests are diverse, but they share profound similarities. They’re guided by purpose, live with intense joy, learn passionately, and see the world with a unique lens. Each episode lets us soak in their hard-earned wisdom and apply it to our lives. Guests include Neil deGrasse Tyson, Seth Godin, and Tyler Cowen.
               </p>
               <h4 class="h4 text-gray-200 mb-4">The Prof G Show with Scott Galloway
 </h4>
-              <h5 class="h5">Section 4 / Westwood One Podcast Network
+              <h5 class="h5 text-gray-200">Section 4 / Westwood One Podcast Network
 </h5>
               <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT6tZ53AHOUO5VRJZmD9RlbbPXjZx_63wdwJ9NP5XYI1OEoJ8g" alt="">
               <p class="mb-8">
@@ -137,14 +137,14 @@
               </p>
               <h4 class="h4 text-gray-200 mb-4">All-In
 </h4>
-              <h5 class="h5">Chamath, Jason, Sacks & Friedberg</h5>
+              <h5 class="h5 text-gray-200">Chamath, Jason, Sacks & Friedberg</h5>
               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLZSFTl8lgNM9b2KSmGEyGCrjOXAUkLSGl8wv_394wGBRcmW3F" alt="">
               <p class="mb-8">
                 Industry veterans, degenerate gamblers & besties Chamath Palihapitiya, Jason Calacanis, David Sacks & David Friedberg cover all things economic, tech, political, social & poker.
               </p>
               <h4 class="h4 text-gray-200 mb-4">The Nathan Barry Show
 </h4>
-              <h5 class="h5">Nathan Barry: Author, Designer, Marketer
+              <h5 class="h5 text-gray-200">Nathan Barry: Author, Designer, Marketer
 </h5>
               <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTI0vmwisvx_F1FxBDUcFFCXRmKiDSamA_Rn7VSLhHv4Qor1fM" alt="">
               <p class="mb-8">
@@ -152,7 +152,7 @@
               </p>
               <h4 class="h4 text-gray-200 mb-4">My First Million
 </h4>
-              <h5 class="h5">The Hustle & Shaan Puri
+              <h5 class="h5 text-gray-200">The Hustle & Shaan Puri
 </h5>
               <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRQHoUOQw49m1uxlDO7946wh-oHVti6hhY5y15DSsCFvIRrGrM" alt="">
               <p class="mb-8">
@@ -160,13 +160,13 @@
               </p>
               <h4 class="h4 text-gray-200 mb-4">Village Global's Venture Stories
 </h4>
-              <h5 class="h5">Erick Torenberg</h5>
+              <h5 class="h5 text-gray-200">Erick Torenberg</h5>
               <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR70v4awEa70z2dm1ADF9JCcwL1lbucAJ9VvHblj2E_esBOd_i7" alt="">
               <p class="mb-8">
                 Village Global's Venture Stories takes you inside the world of venture capital and technology, featuring enlightening interviews with entrepreneurs, investors and tech industry leaders. The podcast is hosted by Village Global partner and co-founder Erik Torenberg. Check us out on the web at villageglobal.vc/podcast for more.
               </p>
               <h4 class="h4 text-gray-200 mb-4">Acquired</h4>
-              <h5 class="h5">Ben Gilbert and David Rosenthal
+              <h5 class="h5 text-gray-200">Ben Gilbert and David Rosenthal
 </h5>
               <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQfXp-aZBbayD4m4VL2zLKjGGO_0_8LmIIa8lOcTZJChwGN4BS-" alt="">
               <p class="mb-8">
@@ -174,14 +174,14 @@
               </p>
               <h4 class="h4 text-gray-200 mb-4">Indie Hackers
 </h4>
-              <h5 class="h5">Courtland Allen</h5>
+              <h5 class="h5 text-gray-200">Courtland Allen</h5>
               <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRqOEKW8RsOiLbLQCjLEhDg1j46YvTZOxFI5PVgQ19qEbNQDfo" alt="">
               <p class="mb-8">
                 Courtland Allen interviews the ambitious indie hackers who are turning their ideas and side projects into profitable online businesses. Explore the latest strategies and tools founders are using to discover new trends, escape the 9-to-5 grind, and create their own personal revenue-generating machines. The future is indie!
               </p>
               <h4 class="h4 text-gray-200 mb-4">The Knowledge Project with Shane Parrish
 </h4>
-              <h5 class="h5">Farnam Street
+              <h5 class="h5 text-gray-200">Farnam Street
 </h5>
               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_C-OrXpcDJyIDq5KkeSgxZrj1BMZ8ZiYO_9oNxCfq1PsvYX4v" alt="">
               <p class="mb-8">
@@ -189,14 +189,14 @@
               </p>
               <h4 class="h4 text-gray-200 mb-4">Akimbo: A Podcast from Seth Godin
 </h4>
-              <h5 class="h5">Seth Godin</h5>
+              <h5 class="h5 text-gray-200">Seth Godin</h5>
               <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSnDJ_iQSdATR3Eku0ttpLMx4z1KQvjFbTrS0dybcQSPRFj7Tk5" alt="">
               <p class="mb-8">
                 Akimbo is an ancient word, from the bend in the river or the bend in an archer's bow. It's become a symbol for strength, a posture of possibility, the idea that when we stand tall, arms bent, looking right at it, we can make a difference. Akimbo's a podcast about our culture and about how we can change it. About seeing what's happening and choosing to do something. The culture is real, but it can be changed. You can bend it.
               </p>
               <h4 class="h4 text-gray-200 mb-4">Conversations with Tyler
 </h4>
-              <h5 class="h5">Mercatus Center at George Mason University
+              <h5 class="h5 text-gray-200">Mercatus Center at George Mason University
 </h5>
               <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcThn4OfQiphVvcZqiMzoYj0PzldrBh5GTX1csJdohAAZt5T4ggQ" alt="">
               <p class="mb-8">
@@ -204,7 +204,7 @@
               </p>
               <h4 class="h4 text-gray-200 mb-4">a16z Podcast
 </h4>
-              <h5 class="h5">Andreessen Horowitz
+              <h5 class="h5 text-gray-200">Andreessen Horowitz
 </h5>
               <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRE266qFcJsd4KqNuXT4JnL-5_AJx6IFggWtyc9fwAahKvHWXg" alt="">
               <p class="mb-8">
@@ -212,7 +212,7 @@
               </p>
               <h4 class="h4 text-gray-200 mb-4">The Tim Ferriss Show
 </h4>
-              <h5 class="h5">Tim Ferriss: Bestselling Author, Human Guinea Pig
+              <h5 class="h5 text-gray-200">Tim Ferriss: Bestselling Author, Human Guinea Pig
 </h5>
               <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSNrO952e8eFWXNGTVyxDtX5q9GD3d0q3WZOD_opgWrvjI7GrM" alt="">
               <p class="mb-8">
@@ -221,7 +221,7 @@
 
               <h4 class="h4 text-gray-200 mb-4">Product ideas
 </h4>
-              <h5 class="h5">Jakob Greenfeld
+              <h5 class="h5 text-gray-200">Jakob Greenfeld
 </h5>
               <!-- <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSNrO952e8eFWXNGTVyxDtX5q9GD3d0q3WZOD_opgWrvjI7GrM" alt=""> -->
               <iframe src="https://open.spotify.com/embed-podcast/episode/0zqsD9V7zLnMVkMjgHaD9t" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
@@ -233,7 +233,7 @@ I host a podcast inspired by the My first Million Podcast (basically just as an 
 The idea is that we schedule a Zoom call, both bring a list with product ideas and then discuss them for an hour or so.
               </p>
               <!-- <h4 class="h4 text-gray-200 mb-4">ddddddddddddd</h4>
-              <h5 class="h5">ssssssssssssssssssssssssss</h5>
+              <h5 class="h5 text-gray-200">ssssssssssssssssssssssssss</h5>
               <img src="fffffffff" alt="">
               <p class="mb-8">
                 ccccccccccccccccccccccccccccccccc
