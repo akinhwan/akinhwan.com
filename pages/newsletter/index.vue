@@ -4,7 +4,7 @@
     <section class="relative">
       <!-- Hero content -->
       <div class="max-w-6xl mx-auto px-4 mb-6 sm:px-6 relative">
-        <div class="md:pt-40">
+        <div class="md:pt-20">
           <div class="max-w-3xl mx-auto text-center">
             <h1 class="h1 mb-4" data-aos="fade-up">I'm going Full-Time Maker</h1>
             <p class="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">

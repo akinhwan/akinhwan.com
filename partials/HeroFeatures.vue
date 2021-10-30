@@ -16,7 +16,7 @@
       </div>
 
       <!-- Hero content -->
-      <div class="relative pt-32 pb-12 md:pt-40 md:pb-20">
+      <div class="relative pt-32 pb-12 md:pt-20 md:pb-20">
         <!-- Content -->
         <div class="max-w-3xl mx-auto text-center pb-12 md:pb-16">
           <h1 class="h1 mb-4" data-aos="fade-up">Here are some of the things I've worked on.</h1>

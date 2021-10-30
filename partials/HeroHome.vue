@@ -21,7 +21,7 @@
       </div>
 
       <!-- Hero content -->
-      <div class="relative pb-10 md:pt-40 md:pb-16">
+      <div class="relative pb-10 md:pt-20 md:pb-16">
 
         <!-- Section header -->
 

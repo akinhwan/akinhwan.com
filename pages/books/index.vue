@@ -5,7 +5,7 @@
 
       <section class="relative">
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
-      <div class="pb-12 md:pt-40 md:pb-20">
+      <div class="pb-12 md:pt-20 md:pb-20">
         <div class="max-w-3xl mx-auto">
 
           <article>
