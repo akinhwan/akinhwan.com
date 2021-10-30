@@ -10,7 +10,7 @@
         </div>
 
         <!-- Testimonials -->
-        <div class="max-w-sm mx-auto grid gap-8 lg:grid-cols-5 lg:gap-6 items-start lg:max-w-none">
+        <div class="max-w-sm mx-auto grid gap-8 lg:grid-cols-3 lg:gap-6 items-start lg:max-w-none">
 
           <!-- 1st testimonial -->
           <div class="flex flex-col h-full p-6 bg-gray-800" data-aos="fade-up">

@@ -2,10 +2,10 @@
   <section class="relative">
 
     <!-- Background image -->
-    <div class="absolute inset-0">
+    <!-- <div class="absolute inset-0">
       <img style="object-position: 0 63%;" class="w-full h-full object-cover" :src="require('~/assets/us.png')" width="1440" height="394" alt="About" />
       <div class="absolute inset-0 bg-gray-900 opacity-75" aria-hidden="true"></div>
-    </div>
+    </div> -->
 
     <!-- Hero content -->
     <div class="max-w-6xl mx-auto px-4 mb-6 sm:px-6 relative">
