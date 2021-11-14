@@ -74,7 +74,7 @@ A big part of why I'm committing to this sort of communication practice [in 2021
 ## What now
 
 Well, the domain expired since it's been a year. All work has frozen on it.
-You can still visit the MVP here https://eager-bassi-3557b3.netlify.app/ 
+You can still visit the MVP here https://posterday.netlify.app/
 
 There are some silver linings here however.
 I collaborated successfully with a 3D illustrator in Jamaica.

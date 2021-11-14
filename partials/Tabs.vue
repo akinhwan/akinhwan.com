@@ -94,7 +94,7 @@
                   <div class="relative bg-gray-800 py-8 md:py-16 px-6 md:pl-16 md:max-w-lg lg:max-w-xl md:ml-auto">
                     <h4 class="h4 mb-2">Pitchgen.co</h4>
                     <p class="text-lg text-gray-400">Use a recurrent neural network to help think of your next big idea. Generate startup ideas trained from taglines of producthunt and betalist at the click of a button! </p>
-                    <a class="btn-sm text-white bg-purple-600 hover:bg-purple-700 mt-6" rel="nofollow noreferrer noopener" target="_blank" href="https://zen-stonebraker-632091.netlify.app/">
+                    <a class="btn-sm text-white bg-purple-600 hover:bg-purple-700 mt-6" rel="nofollow noreferrer noopener" target="_blank" href="https://pitchgen.netlify.app/">
                       <span class="text-sm">Visit this site</span>
                       <svg class="w-3 h-3 fill-current text-purple-400 flex-shrink-0 ml-2" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                         <path d="M6 5H0v2h6v4l6-5-6-5z" />
@@ -122,7 +122,7 @@
                   <div class="relative bg-gray-800 py-8 md:py-16 px-6 md:pr-16 md:max-w-lg lg:max-w-xl">
                     <h4 class="h4 mb-2">Soheco.org</h4>
                     <p class="text-lg text-gray-400">Engaging seniors in a reflective conversation about the benefits of social connections. Visitors can receive personalized resources based on their responses and preferences.</p>
-                    <a class="btn-sm text-white bg-purple-600 hover:bg-purple-700 mt-6" href="https://agitated-mcnulty-65ac26.netlify.app/" rel="nofollow noreferrer noopener" target="_blank">
+                    <a class="btn-sm text-white bg-purple-600 hover:bg-purple-700 mt-6" href="https://soheco-org.netlify.app/" rel="nofollow noreferrer noopener" target="_blank">
                       <span class="text-sm">Visit this site</span>
                       <svg class="w-3 h-3 fill-current text-purple-400 flex-shrink-0 ml-2" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                         <path d="M6 5H0v2h6v4l6-5-6-5z" />
