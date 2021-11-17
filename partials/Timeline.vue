@@ -379,8 +379,10 @@
                   aria-hidden="true"
                 ></div>
                 <h4 class="h4">
-                  I revamp my site, surround myself with accountability
-                  partners, and start building in public.
+                  I revamp
+                  <a href="https://akinhwansite.netlify.app"> my website </a>
+                  , surround myself with accountability partners, and start
+                  building in public.
                 </h4>
               </div>
               <!-- <p class="text-lg text-gray-400">Pretium lectus quam id leo. Urna et pharetra pharetra massa massa. Adipiscing enim eu neque aliquam vestibulum morbi blandit cursus risus.</p> -->

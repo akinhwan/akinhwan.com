@@ -106,7 +106,6 @@
               class="
                 emailoctopus-rewards
                 sm:text-center
-                lg:text-left
                 text-purple-400 text-xs
                 font-sans
               "

@@ -17,7 +17,8 @@
             data-aos-delay="200"
             data-aos-anchor="[data-aos-id-tabs]"
           >
-            These are just quick overviews, click to learn more on each card.
+            <!-- These are just quick overviews, click to learn more on each card. -->
+            I couldn't fit everything here, so reach out to see more.
           </p>
         </div>
 
@@ -143,13 +144,45 @@
                 >Pitchgen.co</span
               >
             </button>
-            <!-- <button :class="{ 'opacity-50': tab !== '4' }" class="flex items-center font-medium py-2 px-4 m-2 bg-gray-800 rounded-full group transition duration-500" @click="tab = '4'">
-              <svg class="w-4 h-4 fill-current text-purple-600 mr-2" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8 9v6a8 8 0 008-8V1a8 8 0 00-8 8zM0 6v3a6 6 0 006 6v-3a6 6 0 00-6-6z" />
+            <button
+              :class="{ 'opacity-50': tab !== '4' }"
+              class="
+                flex
+                items-center
+                font-medium
+                py-2
+                px-4
+                m-2
+                bg-gray-800
+                rounded-full
+                group
+                transition
+                duration-500
+              "
+              @click="tab = '4'"
+            >
+              <svg
+                class="w-4 h-4 fill-current text-purple-600 mr-2"
+                viewBox="0 0 16 16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 9v6a8 8 0 008-8V1a8 8 0 00-8 8zM0 6v3a6 6 0 006 6v-3a6 6 0 00-6-6z"
+                />
               </svg>
-              <span class="text-gray-400 group-hover:text-gray-200 transition-colors duration-150 ease-in-out">Quick action</span>
+              <span
+                class="
+                  text-gray-400
+                  group-hover:text-gray-200
+                  transition-colors
+                  duration-150
+                  ease-in-out
+                "
+                >PoppaLock.xyz</span
+              >
             </button>
-            <button :class="{ 'opacity-50': tab !== '5' }" class="flex items-center font-medium py-2 px-4 m-2 bg-gray-800 rounded-full group transition duration-500" @click="tab = '5'">
+
+            <!-- <button :class="{ 'opacity-50': tab !== '5' }" class="flex items-center font-medium py-2 px-4 m-2 bg-gray-800 rounded-full group transition duration-500" @click="tab = '5'">
               <svg class="w-4 h-4 fill-current text-purple-600 mr-2" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                 <path d="M14.936 6.007H8.358l1.594-4.685c.3-.997-.897-1.794-1.694-.997L.284 8.3c-.598.598-.199 1.694.698 1.694H7.56l-1.594 4.685c-.3.997.897 1.794 1.694.997L15.633 7.7c.598-.598.2-1.694-.697-1.694z" />
               </svg>
@@ -170,7 +203,7 @@
             >
               <div class="w-full" v-show="tab === '1'">
                 <article class="relative max-w-md mx-auto md:max-w-none">
-                  <figure class="md:absolute md:inset-y-0 md:right-0 md:w-1/2">
+                  <figure class="md:absolute md:inset-y-0 md:left-0 md:w-1/2">
                     <img
                       class="w-full h-full object-cover"
                       :src="require('~/assets/pubmed-home.png')"
@@ -186,8 +219,8 @@
                       py-8
                       md:py-16
                       px-6
-                      md:pr-16 md:max-w-lg
                       lg:max-w-xl
+                      md:ml-auto
                     "
                   >
                     <h4 class="h4 mb-2">Pubmed.gov</h4>
@@ -241,7 +274,7 @@
             >
               <div class="w-full" v-show="tab === '3'">
                 <article class="relative max-w-md mx-auto md:max-w-none">
-                  <figure class="md:absolute md:inset-y-0 md:right-0 md:w-1/2">
+                  <figure class="md:absolute md:inset-y-0 md:left-0 md:w-1/2">
                     <img
                       class="w-full h-full object-cover"
                       :src="require('~/assets/soheco.png')"
@@ -257,8 +290,8 @@
                       py-8
                       md:py-16
                       px-6
-                      md:pr-16 md:max-w-lg
                       lg:max-w-xl
+                      md:ml-auto
                     "
                   >
                     <h4 class="h4 mb-2">Soheco.org</h4>
@@ -328,7 +361,6 @@
                       py-8
                       md:py-16
                       px-6
-                      md:pl-16 md:max-w-lg
                       lg:max-w-xl
                       md:ml-auto
                     "
@@ -373,7 +405,7 @@
             </transition>
 
             <!-- Item 4 -->
-            <!-- <transition
+            <transition
               enter-active-class="transition ease-in-out duration-500 transform order-first"
               enter-class="opacity-0 scale-98"
               enter-to-class="opacity-100 scale-100"
@@ -384,21 +416,61 @@
               <div class="w-full" v-show="tab === '4'">
                 <article class="relative max-w-md mx-auto md:max-w-none">
                   <figure class="md:absolute md:inset-y-0 md:left-0 md:w-1/2">
-                    <img class="w-full h-full object-cover" :src="require('~/assets/hero-image-01.jpg')" width="516" height="387" alt="Tabs 02" />
+                    <img
+                      class="w-full h-full object-cover"
+                      :src="require('~/assets/poppalock.png')"
+                      width="516"
+                      height="387"
+                      alt="Tabs 04"
+                    />
                   </figure>
-                  <div class="relative bg-gray-800 py-8 md:py-16 px-6 md:pl-16 md:max-w-lg lg:max-w-xl md:ml-auto">
-                    <h4 class="h4 mb-2">Easy to start, optimize and scale</h4>
-                    <p class="text-lg text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                    <a class="btn-sm text-white bg-purple-600 hover:bg-purple-700 mt-6" href="#0">
-                      <span class="text-sm">Learn more</span>
-                      <svg class="w-3 h-3 fill-current text-purple-400 flex-shrink-0 ml-2" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                  <div
+                    class="
+                      relative
+                      bg-gray-800
+                      py-8
+                      md:py-16
+                      px-6
+                      lg:max-w-xl
+                      md:ml-auto
+                    "
+                  >
+                    <h4 class="h4 mb-2">Poppalock.xyz</h4>
+                    <p class="text-lg text-gray-400">
+                      A web game inspired by a Dave & Buster's arcade game that
+                      tests your timing and reflexes. Compete to top the
+                      leaderboard!
+                    </p>
+                    <a
+                      class="
+                        btn-sm
+                        text-white
+                        bg-purple-600
+                        hover:bg-purple-700
+                        mt-6
+                      "
+                      href="https://poppalock.xyz/"
+                    >
+                      <span class="text-sm">Visit this site</span>
+                      <svg
+                        class="
+                          w-3
+                          h-3
+                          fill-current
+                          text-purple-400
+                          flex-shrink-0
+                          ml-2
+                        "
+                        viewBox="0 0 12 12"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
                         <path d="M6 5H0v2h6v4l6-5-6-5z" />
                       </svg>
                     </a>
                   </div>
                 </article>
               </div>
-            </transition> -->
+            </transition>
 
             <!-- Item 5 -->
             <!-- <transition
