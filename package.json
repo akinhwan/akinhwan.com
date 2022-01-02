@@ -7,9 +7,9 @@
   "private": true,
   "scripts": {
     "dev": "nuxt",
-    "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
+    "build": "nuxt build",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
   },
   "lint-staged": {
@@ -17,14 +17,15 @@
     "*.{css,vue}": "stylelint"
   },
   "dependencies": {
-    "@nuxt/content": "^1.2.0",
+    "@babel/preset-env": "^7.12.13",
+    "@nuxt/content": "^1.15.1",
     "@nuxtjs/axios": "^5.3.6",
     "@nuxtjs/pwa": "^3.0.0-0",
-    "nuxt": "^2.0.0",
     "@tailwindcss/custom-forms": "^0.2.1",
+    "aos": "^3.0.0-beta.6",
     "node-sass": "^4.14.1",
-    "sass-loader": "^9.0.3",
-    "aos": "^3.0.0-beta.6"
+    "nuxt": "^2.0.0",
+    "sass-loader": "^9.0.3"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^2.0.0",
@@ -32,6 +33,7 @@
     "@nuxtjs/stylelint-module": "^3.1.0",
     "@nuxtjs/tailwindcss": "^2.0.0",
     "babel-eslint": "^10.0.1",
+    "cruip-js-toolkit": "^1.0.2",
     "eslint": "^6.1.0",
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-nuxt": ">=0.4.2",
@@ -41,7 +43,6 @@
     "node-sass": "^4.14.1",
     "prettier": "^1.19.1",
     "sass-loader": "^8.0.2",
-    "stylelint": "^10.1.0",
-    "cruip-js-toolkit": "^1.0.2"
+    "stylelint": "^10.1.0"
   }
 }

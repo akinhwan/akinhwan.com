@@ -7,7 +7,7 @@
           <h2 class="h2 mb-4">It's all love.</h2>
           <p class="text-xl text-gray-400">
             I'm humbled and grateful for the people I've been able to work with
-            in the past. Validation from my peers and clients motivates me to do
+            in the past. Validation from my peers and clients pushes me to be
             better.
           </p>
         </div>
@@ -125,7 +125,7 @@
             <blockquote class="text-md text-gray-400 flex-grow">
               When thinking about product design, Andrew has a unique ability to
               put himself in the user’s shoes and think about the experience
-              lifecycle. Andrew also takes time understand what his client is
+              lifecycle. Andrew also takes time to understand what his client is
               looking for. I’m confident Andrew’s
               <b class="text-gray-300">easy going</b> personality and
               <b class="text-gray-300">dedication</b> to creating beautiful

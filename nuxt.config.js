@@ -1,4 +1,5 @@
 export default {
+  target: 'static',
   mode: 'universal',
   /*
    ** Headers of the page
@@ -73,6 +74,9 @@ export default {
     /*
      ** You can extend webpack config here
      */
+    presets(env, [preset, options]) {
+      return [['@babel/preset-env', options]]
+    },
     extend(config, ctx) {}
   },
   generate: {
