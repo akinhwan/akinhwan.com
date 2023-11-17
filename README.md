@@ -4,7 +4,7 @@ This personal site is the home of my newsletter archive, blog posts, past work, 
 
 ## Ben's Blog Boilerplate
 
-This project was a fork of [bencodezen.io](https://www.bencodezen.io).
+The blog portion of this website, was a fork of [bencodezen.io](https://www.bencodezen.io).
 
 ## Technology Stack
 
@@ -31,5 +31,3 @@ $ yarn start
 # generate static project
 $ yarn generate
 ```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
