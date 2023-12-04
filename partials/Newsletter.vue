@@ -40,17 +40,11 @@
         </div>
 
         <div
-          class="
-            relative
-            flex flex-col
-            lg:flex-row
-            justify-between
-            items-center
-          "
+          class="relative flex flex-col lg:flex-row justify-between items-center"
         >
           <!-- CTA content -->
           <div class="mb-6 lg:mr-16 lg:mb-0 text-center lg:text-left lg:w-1/2">
-            <h3 class="h3 text-white mb-2">Watch me go Full-Time Maker</h3>
+            <h3 class="h3 text-white mb-2">Let's keep in touch</h3>
             <p class="text-purple-200 text-lg">
               Join my weekly newsletter to follow me on my journey.
             </p>
@@ -64,12 +58,7 @@
             href="https://emailoctopus.com/bundles/emailoctopuslist/css/1.6/form.css"
           />
           <div
-            class="
-              w-full
-              lg:w-1/2
-              emailoctopus-form-wrapper emailoctopus-form-default
-              null
-            "
+            class="w-full lg:w-1/2 emailoctopus-form-wrapper emailoctopus-form-default null"
             style="
               font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
               color: rgb(26, 26, 26);
@@ -93,16 +82,7 @@
               class="emailoctopus-form text-white"
             >
               <div
-                class="
-                  emailoctopus-form-row
-                  flex flex-col
-                  sm:flex-row
-                  justify-center
-                  max-w-xs
-                  mx-auto
-                  sm:max-w-md
-                  lg:max-w-none
-                "
+                class="emailoctopus-form-row flex flex-col sm:flex-row justify-center max-w-xs mx-auto sm:max-w-md lg:max-w-none"
               >
                 <!-- <label for="field_0">
         Email address
@@ -112,34 +92,13 @@
                   name="field_0"
                   type="email"
                   required="required"
-                  class="
-                    font-sans
-                    w-full
-                    appearance-none
-                    bg-purple-800
-                    border border-purple-500
-                    focus:border-purple-300
-                    rounded-sm
-                    px-4
-                    py-3
-                    mb-2
-                    sm:mb-0 sm:mr-2
-                    text-white
-                    placeholder-purple-400
-                  "
+                  class="font-sans w-full appearance-none bg-purple-800 border border-purple-500 focus:border-purple-300 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-white placeholder-purple-400"
                   placeholder="Email Address…"
                 />
                 <input type="hidden" name="successRedirectUrl" />
                 <button
                   type="submit"
-                  class="
-                    btn
-                    text-purple-600
-                    bg-white
-                    hover:bg-purple-100
-                    shadow
-                    font-sans font-black
-                  "
+                  class="btn text-purple-600 bg-white hover:bg-purple-100 shadow font-sans font-black"
                 >
                   Subscribe
                 </button>
@@ -165,13 +124,7 @@
               <!-- </div> -->
             </form>
             <div
-              class="
-                emailoctopus-rewards
-                sm:text-center
-                lg:text-left
-                text-purple-400 text-xs
-                font-sans
-              "
+              class="emailoctopus-rewards sm:text-center lg:text-left text-purple-400 text-xs font-sans"
             >
               Powered by
               <a

@@ -3,15 +3,7 @@
     <div class="max-w-6xl mx-auto px-4 sm:px-6 relative">
       <!-- Illustration behind hero content -->
       <div
-        class="
-          absolute
-          left-0
-          bottom-0
-          -ml-20
-          hidden
-          lg:block
-          pointer-events-none
-        "
+        class="absolute left-0 bottom-0 -ml-20 hidden lg:block pointer-events-none"
         aria-hidden="true"
         data-aos="fade-up"
         data-aos-delay="400"
@@ -53,15 +45,7 @@
         <div class="md:grid md:grid-cols-12 md:gap-6 items-center">
           <!-- Image -->
           <div
-            class="
-              max-w-xl
-              md:max-w-none md:w-full
-              mx-auto
-              md:col-span-5
-              lg:col-span-5
-              mb-8
-              md:mb-0 md:order-1
-            "
+            class="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-5 mb-8 md:mb-0 md:order-1"
             data-aos="fade-up"
             data-aos-anchor="[data-aos-id-features-home]"
           >
@@ -85,25 +69,13 @@
           </div>
           <!-- Content -->
           <div
-            class="
-              max-w-xl
-              md:max-w-none md:w-full
-              mx-auto
-              md:col-span-7
-              lg:col-span-7
-            "
+            class="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-7"
             data-aos="fade-right"
             data-aos-anchor="[data-aos-id-features-home]"
           >
             <div class="md:pr-4 lg:pr-12 xl:pr-16">
               <div
-                class="
-                  font-architects-daughter
-                  text-center
-                  md:text-left
-                  text-xl text-purple-500
-                  mb-2
-                "
+                class="font-architects-daughter text-center md:text-left text-xl text-purple-500 mb-2"
               >
                 Hi there, my name is
               </div>
@@ -120,7 +92,7 @@
                 I'm a Developer & Designer
                 <!-- <br> Building in public my side-hustles. -->
                 <br />
-                based in Northern Virginia, USA
+                based in Redwood City, California.
               </p>
               <!-- <div class="mb-8 mt-2 font-architects-daughter text-l text-gray-400 mb-2">based in Northern Virginia, USA.</div> -->
               <div class="max-w-xs mx-auto sm:max-w-none sm:flex">
@@ -130,29 +102,12 @@
                   data-aos-delay="400"
                 >
                   <router-link
-                    class="
-                      btn
-                      text-white
-                      bg-purple-600
-                      hover:bg-purple-700
-                      w-full
-                      mb-4
-                      sm:mb-0
-                      text-center
-                      md:text-left
-                    "
+                    class="btn text-white bg-purple-600 hover:bg-purple-700 w-full mb-4 sm:mb-0 text-center md:text-left"
                     to="/newsletter"
                   >
                     My Curated Newsletter
                     <svg
-                      class="
-                        w-3
-                        h-3
-                        fill-current
-                        text-purple-400
-                        flex-shrink-0
-                        ml-2
-                      "
+                      class="w-3 h-3 fill-current text-purple-400 flex-shrink-0 ml-2"
                       viewBox="0 0 12 12"
                       xmlns="http://www.w3.org/2000/svg"
                     >

@@ -33,19 +33,7 @@
           >
             <button
               :class="{ 'opacity-50': tab !== '1' }"
-              class="
-                flex
-                items-center
-                font-medium
-                py-2
-                px-4
-                m-2
-                bg-gray-800
-                rounded-full
-                group
-                transition
-                duration-500
-              "
+              class="flex items-center font-medium py-2 px-4 m-2 bg-gray-800 rounded-full group transition duration-500"
               @click="tab = '1'"
             >
               <svg
@@ -58,70 +46,14 @@
                 />
               </svg>
               <span
-                class="
-                  text-gray-400
-                  group-hover:text-gray-200
-                  transition-colors
-                  duration-150
-                  ease-in-out
-                "
+                class="text-gray-400 group-hover:text-gray-200 transition-colors duration-150 ease-in-out"
                 >Pubmed.gov</span
               >
             </button>
 
             <button
-              :class="{ 'opacity-50': tab !== '3' }"
-              class="
-                flex
-                items-center
-                font-medium
-                py-2
-                px-4
-                m-2
-                bg-gray-800
-                rounded-full
-                group
-                transition
-                duration-500
-              "
-              @click="tab = '3'"
-            >
-              <svg
-                class="w-4 h-4 fill-current text-purple-600 mr-2"
-                viewBox="0 0 16 16"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm0 10c-1.1 0-2-.9-2-2 0-.2 0-.3.1-.5L3.6 5 5 3.6l2.5 2.5c.2-.1.3-.1.5-.1 1.1 0 2 .9 2 2s-.9 2-2 2z"
-                />
-              </svg>
-              <span
-                class="
-                  text-gray-400
-                  group-hover:text-gray-200
-                  transition-colors
-                  duration-150
-                  ease-in-out
-                "
-                >Soheco.org</span
-              >
-            </button>
-
-            <button
               :class="{ 'opacity-50': tab !== '2' }"
-              class="
-                flex
-                items-center
-                font-medium
-                py-2
-                px-4
-                m-2
-                bg-gray-800
-                rounded-full
-                group
-                transition
-                duration-500
-              "
+              class="flex items-center font-medium py-2 px-4 m-2 bg-gray-800 rounded-full group transition duration-500"
               @click="tab = '2'"
             >
               <svg
@@ -134,31 +66,34 @@
                 />
               </svg>
               <span
-                class="
-                  text-gray-400
-                  group-hover:text-gray-200
-                  transition-colors
-                  duration-150
-                  ease-in-out
-                "
-                >Pitchgen.co</span
+                class="text-gray-400 group-hover:text-gray-200 transition-colors duration-150 ease-in-out"
+                >Memotrix</span
               >
             </button>
+
+            <button
+              :class="{ 'opacity-50': tab !== '3' }"
+              class="flex items-center font-medium py-2 px-4 m-2 bg-gray-800 rounded-full group transition duration-500"
+              @click="tab = '3'"
+            >
+              <svg
+                class="w-4 h-4 fill-current text-purple-600 mr-2"
+                viewBox="0 0 16 16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm0 10c-1.1 0-2-.9-2-2 0-.2 0-.3.1-.5L3.6 5 5 3.6l2.5 2.5c.2-.1.3-.1.5-.1 1.1 0 2 .9 2 2s-.9 2-2 2z"
+                />
+              </svg>
+              <span
+                class="text-gray-400 group-hover:text-gray-200 transition-colors duration-150 ease-in-out"
+                >Soheco.org</span
+              >
+            </button>
+
             <button
               :class="{ 'opacity-50': tab !== '4' }"
-              class="
-                flex
-                items-center
-                font-medium
-                py-2
-                px-4
-                m-2
-                bg-gray-800
-                rounded-full
-                group
-                transition
-                duration-500
-              "
+              class="flex items-center font-medium py-2 px-4 m-2 bg-gray-800 rounded-full group transition duration-500"
               @click="tab = '4'"
             >
               <svg
@@ -171,14 +106,48 @@
                 />
               </svg>
               <span
-                class="
-                  text-gray-400
-                  group-hover:text-gray-200
-                  transition-colors
-                  duration-150
-                  ease-in-out
-                "
+                class="text-gray-400 group-hover:text-gray-200 transition-colors duration-150 ease-in-out"
                 >PoppaLock.xyz</span
+              >
+            </button>
+
+            <button
+              :class="{ 'opacity-50': tab !== '5' }"
+              class="flex items-center font-medium py-2 px-4 m-2 bg-gray-800 rounded-full group transition duration-500"
+              @click="tab = '5'"
+            >
+              <svg
+                class="w-4 h-4 fill-current text-purple-600 mr-2"
+                viewBox="0 0 16 16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 9v6a8 8 0 008-8V1a8 8 0 00-8 8zM0 6v3a6 6 0 006 6v-3a6 6 0 00-6-6z"
+                />
+              </svg>
+              <span
+                class="text-gray-400 group-hover:text-gray-200 transition-colors duration-150 ease-in-out"
+                >Connect 4</span
+              >
+            </button>
+
+            <button
+              :class="{ 'opacity-50': tab !== '6' }"
+              class="flex items-center font-medium py-2 px-4 m-2 bg-gray-800 rounded-full group transition duration-500"
+              @click="tab = '6'"
+            >
+              <svg
+                class="w-4 h-4 fill-current text-purple-600 mr-2"
+                viewBox="0 0 16 16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 9v6a8 8 0 008-8V1a8 8 0 00-8 8zM0 6v3a6 6 0 006 6v-3a6 6 0 00-6-6z"
+                />
+              </svg>
+              <span
+                class="text-gray-400 group-hover:text-gray-200 transition-colors duration-150 ease-in-out"
+                >Schulte Table</span
               >
             </button>
 
@@ -213,15 +182,7 @@
                     />
                   </figure>
                   <div
-                    class="
-                      relative
-                      bg-gray-800
-                      py-8
-                      md:py-16
-                      px-6
-                      lg:max-w-xl
-                      md:ml-auto
-                    "
+                    class="relative bg-gray-800 py-8 md:py-16 px-6 lg:max-w-xl md:ml-auto"
                   >
                     <h4 class="h4 mb-2">Pubmed.gov</h4>
                     <p class="text-lg text-gray-400">
@@ -231,27 +192,14 @@
                       literature.
                     </p>
                     <a
-                      class="
-                        btn-sm
-                        text-white
-                        bg-purple-600
-                        hover:bg-purple-700
-                        mt-6
-                      "
+                      class="btn-sm text-white bg-purple-600 hover:bg-purple-700 mt-6"
                       rel="nofollow noreferrer noopener"
                       target="_blank"
                       href="https://www.pubmed.gov"
                     >
                       <span class="text-sm">Visit this site</span>
                       <svg
-                        class="
-                          w-3
-                          h-3
-                          fill-current
-                          text-purple-400
-                          flex-shrink-0
-                          ml-2
-                        "
+                        class="w-3 h-3 fill-current text-purple-400 flex-shrink-0 ml-2"
                         viewBox="0 0 12 12"
                         xmlns="http://www.w3.org/2000/svg"
                       >
@@ -284,15 +232,7 @@
                     />
                   </figure>
                   <div
-                    class="
-                      relative
-                      bg-gray-800
-                      py-8
-                      md:py-16
-                      px-6
-                      lg:max-w-xl
-                      md:ml-auto
-                    "
+                    class="relative bg-gray-800 py-8 md:py-16 px-6 lg:max-w-xl md:ml-auto"
                   >
                     <h4 class="h4 mb-2">Soheco.org</h4>
                     <p class="text-lg text-gray-400">
@@ -302,27 +242,14 @@
                       preferences.
                     </p>
                     <a
-                      class="
-                        btn-sm
-                        text-white
-                        bg-purple-600
-                        hover:bg-purple-700
-                        mt-6
-                      "
+                      class="btn-sm text-white bg-purple-600 hover:bg-purple-700 mt-6"
                       href="https://soheco-org.netlify.app/"
                       rel="nofollow noreferrer noopener"
                       target="_blank"
                     >
                       <span class="text-sm">Visit this site</span>
                       <svg
-                        class="
-                          w-3
-                          h-3
-                          fill-current
-                          text-purple-400
-                          flex-shrink-0
-                          ml-2
-                        "
+                        class="w-3 h-3 fill-current text-purple-400 flex-shrink-0 ml-2"
                         viewBox="0 0 12 12"
                         xmlns="http://www.w3.org/2000/svg"
                       >
@@ -348,51 +275,31 @@
                   <figure class="md:absolute md:inset-y-0 md:left-0 md:w-1/2">
                     <img
                       class="w-full h-full object-cover"
-                      :src="require('~/assets/pitchgen-home.png')"
+                      :src="require('~/assets/memotrix.png')"
                       width="516"
                       height="387"
                       alt="Tabs 02"
                     />
                   </figure>
                   <div
-                    class="
-                      relative
-                      bg-gray-800
-                      py-8
-                      md:py-16
-                      px-6
-                      lg:max-w-xl
-                      md:ml-auto
-                    "
+                    class="relative bg-gray-800 py-8 md:py-16 px-6 lg:max-w-xl md:ml-auto"
                   >
-                    <h4 class="h4 mb-2">Pitchgen.co</h4>
+                    <h4 class="h4 mb-2">Memotrix</h4>
                     <p class="text-lg text-gray-400">
-                      Use a recurrent neural network to help think of your next
-                      big idea. Generate startup ideas trained from taglines of
-                      producthunt and betalist at the click of a button!
+                      Inspired by one of the games in the Lumosity app, I
+                      reverse engineered the game and built it from scratch.
+                      Test your memory and see how many levels you can get
+                      through!
                     </p>
                     <a
-                      class="
-                        btn-sm
-                        text-white
-                        bg-purple-600
-                        hover:bg-purple-700
-                        mt-6
-                      "
+                      class="btn-sm text-white bg-purple-600 hover:bg-purple-700 mt-6"
                       rel="nofollow noreferrer noopener"
                       target="_blank"
-                      href="https://pitchgen.netlify.app/"
+                      href="https://memotrix.netlify.app/"
                     >
-                      <span class="text-sm">Visit this site</span>
+                      <span class="text-sm">Play this game</span>
                       <svg
-                        class="
-                          w-3
-                          h-3
-                          fill-current
-                          text-purple-400
-                          flex-shrink-0
-                          ml-2
-                        "
+                        class="w-3 h-3 fill-current text-purple-400 flex-shrink-0 ml-2"
                         viewBox="0 0 12 12"
                         xmlns="http://www.w3.org/2000/svg"
                       >
@@ -425,42 +332,21 @@
                     />
                   </figure>
                   <div
-                    class="
-                      relative
-                      bg-gray-800
-                      py-8
-                      md:py-16
-                      px-6
-                      lg:max-w-xl
-                      md:ml-auto
-                    "
+                    class="relative bg-gray-800 py-8 md:py-16 px-6 lg:max-w-xl md:ml-auto"
                   >
-                    <h4 class="h4 mb-2">Poppalock.xyz</h4>
+                    <h4 class="h4 mb-2">Poppalock</h4>
                     <p class="text-lg text-gray-400">
                       A web game inspired by a Dave & Buster's arcade game that
                       tests your timing and reflexes. Compete to top the
                       leaderboard!
                     </p>
                     <a
-                      class="
-                        btn-sm
-                        text-white
-                        bg-purple-600
-                        hover:bg-purple-700
-                        mt-6
-                      "
-                      href="https://poppalock.xyz/"
+                      class="btn-sm text-white bg-purple-600 hover:bg-purple-700 mt-6"
+                      href="https://poppalock.netlify.app/"
                     >
                       <span class="text-sm">Visit this site</span>
                       <svg
-                        class="
-                          w-3
-                          h-3
-                          fill-current
-                          text-purple-400
-                          flex-shrink-0
-                          ml-2
-                        "
+                        class="w-3 h-3 fill-current text-purple-400 flex-shrink-0 ml-2"
                         viewBox="0 0 12 12"
                         xmlns="http://www.w3.org/2000/svg"
                       >
@@ -473,6 +359,102 @@
             </transition>
 
             <!-- Item 5 -->
+            <transition
+              enter-active-class="transition ease-in-out duration-500 transform order-first"
+              enter-class="opacity-0 scale-98"
+              enter-to-class="opacity-100 scale-100"
+              leave-active-class="transition ease-out duration-300 transform absolute"
+              leave-class="opacity-100 scale-100"
+              leave-to-class="opacity-0 scale-98"
+            >
+              <div class="w-full" v-show="tab === '5'">
+                <article class="relative max-w-md mx-auto md:max-w-none">
+                  <figure class="md:absolute md:inset-y-0 md:left-0 md:w-1/2">
+                    <img
+                      class="w-full h-full object-cover"
+                      :src="require('~/assets/connect-4-vercel.png')"
+                      width="516"
+                      height="387"
+                      alt="Tabs 05"
+                    />
+                  </figure>
+                  <div
+                    class="relative bg-gray-800 py-8 md:py-16 px-6 lg:max-w-xl md:ml-auto"
+                  >
+                    <h4 class="h4 mb-2">Connect 4</h4>
+                    <p class="text-lg text-gray-400">
+                      My own react implementation of the classic game Connect 4.
+                      Algorithm for calculating winning state is original to me.
+                      Play against a friend on your phone, anywhere you go!
+                    </p>
+                    <a
+                      class="btn-sm text-white bg-purple-600 hover:bg-purple-700 mt-6"
+                      href="https://connect-4-beta.vercel.app/"
+                    >
+                      <span class="text-sm">Visit this site</span>
+                      <svg
+                        class="w-3 h-3 fill-current text-purple-400 flex-shrink-0 ml-2"
+                        viewBox="0 0 12 12"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M6 5H0v2h6v4l6-5-6-5z" />
+                      </svg>
+                    </a>
+                  </div>
+                </article>
+              </div>
+            </transition>
+
+            <!-- Item 6 -->
+            <transition
+              enter-active-class="transition ease-in-out duration-500 transform order-first"
+              enter-class="opacity-0 scale-98"
+              enter-to-class="opacity-100 scale-100"
+              leave-active-class="transition ease-out duration-300 transform absolute"
+              leave-class="opacity-100 scale-100"
+              leave-to-class="opacity-0 scale-98"
+            >
+              <div class="w-full" v-show="tab === '6'">
+                <article class="relative max-w-md mx-auto md:max-w-none">
+                  <figure class="md:absolute md:inset-y-0 md:left-0 md:w-1/2">
+                    <img
+                      class="w-full h-full object-cover"
+                      :src="require('~/assets/schulte.png')"
+                      width="516"
+                      height="387"
+                      alt="Tabs 06"
+                    />
+                  </figure>
+                  <div
+                    class="relative bg-gray-800 py-8 md:py-16 px-6 lg:max-w-xl md:ml-auto"
+                  >
+                    <h4 class="h4 mb-2">Schulte Table</h4>
+                    <p class="text-lg text-gray-400">
+                      My implementation of a schulte table test. Compete with
+                      others, and try to get the fastest time!
+                    </p>
+                    <a
+                      class="btn-sm text-white bg-purple-600 hover:bg-purple-700 mt-6"
+                      href="https://schultetable.netlify.app"
+                    >
+                      <span class="text-sm">Test your peripheral vision</span>
+                      <svg
+                        class="w-3 h-3 fill-current text-purple-400 flex-shrink-0 ml-2"
+                        viewBox="0 0 12 12"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M6 5H0v2h6v4l6-5-6-5z" />
+                      </svg>
+                    </a>
+                  </div>
+                </article>
+              </div>
+            </transition>
+
+            <!-- MORE -->
+            <!-- https://formation-flying.netlify.app/ -->
+            <!-- https://posterday.netlify.app/ -->
+            <!-- https://3dpinballrecall.netlify.app/ -->
             <!-- <transition
               enter-active-class="transition ease-in-out duration-500 transform order-first"
               enter-class="opacity-0 scale-98"
