@@ -107,7 +107,7 @@
               </svg>
               <span
                 class="text-gray-400 group-hover:text-gray-200 transition-colors duration-150 ease-in-out"
-                >PoppaLock.xyz</span
+                >Memotrix</span
               >
             </button>
 
@@ -325,7 +325,7 @@
                   <figure class="md:absolute md:inset-y-0 md:left-0 md:w-1/2">
                     <img
                       class="w-full h-full object-cover"
-                      :src="require('~/assets/poppalock.png')"
+                      :src="require('~/assets/memotrix.png')"
                       width="516"
                       height="387"
                       alt="Tabs 04"
@@ -334,15 +334,13 @@
                   <div
                     class="relative bg-gray-800 py-8 md:py-16 px-6 lg:max-w-xl md:ml-auto"
                   >
-                    <h4 class="h4 mb-2">Poppalock</h4>
+                    <h4 class="h4 mb-2">Memotrix</h4>
                     <p class="text-lg text-gray-400">
-                      A web game inspired by a Dave & Buster's arcade game that
-                      tests your timing and reflexes. Compete to top the
-                      leaderboard!
+                      A web game inspired by a lumosity style memory game. See how many levels you can get to and add your name to the leaderboard!
                     </p>
                     <a
                       class="btn-sm text-white bg-purple-600 hover:bg-purple-700 mt-6"
-                      href="https://poppalock.netlify.app/"
+                      href="https://memotrix.netlify.app/"
                     >
                       <span class="text-sm">Visit this site</span>
                       <svg
