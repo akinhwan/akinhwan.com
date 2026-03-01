@@ -33,7 +33,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: [],
+  css: ['~/assets/css/tailwind.css'],
   /*
    ** Plugins to load before mounting the App
    */
@@ -45,8 +45,7 @@ export default {
     // Doc: https://github.com/nuxt-community/eslint-module
     // '@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/stylelint-module
-    '@nuxtjs/stylelint-module',
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/stylelint-module'
   ],
   /*
    ** Nuxt.js modules
@@ -73,6 +72,11 @@ export default {
    ** Build configuration
    */
   build: {
+    postcss: {
+      postcssOptions: {
+        plugins: [require('tailwindcss')('./tailwind.config.js'), require('autoprefixer')()]
+      }
+    },
     /*
      ** You can extend webpack config here
      */
