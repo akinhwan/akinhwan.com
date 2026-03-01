@@ -5,7 +5,9 @@ export default {
    ** Headers of the page
    */
   head: {
-    title: process.env.npm_package_name || '',
+    titleTemplate: (titleChunk) =>
+      titleChunk ? `${titleChunk} · Andrew Kim` : 'Andrew Kim',
+    title: process.env.npm_package_name || 'Andrew Kim',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -19,7 +21,7 @@ export default {
       {
         rel: 'stylesheet',
         href:
-          'https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Inter&display=swap'
+          'https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap'
       },
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]

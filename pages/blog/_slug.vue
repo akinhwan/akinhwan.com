@@ -1,119 +1,151 @@
 <template>
   <main>
-    <article class="content">
-      <p class="text-gray-500 blog-publish-date">{{ new Date(page.date).toLocaleDateString('default', {year: 'numeric', month: 'long', day: 'numeric' }) }}</p>
-      <h1 class="text-white blog-title">{{ page.title }}</h1>
-    <img src="~/assets/9-5.png" alt="9 to 5" v-if="page.isNewsletter">
-      <nuxt-content class="text-white" :document="page" />
-    <img src="~/assets/5-9.png" alt="5 to 9" v-if="page.isNewsletter">
-    </article>
-    <Contact />
+    <section class="journal-entry page-shell page-space">
+      <article class="journal-entry__surface surface-card">
+        <header class="journal-entry__header">
+          <p class="eyebrow">Journal Entry</p>
+          <p class="meta">{{ formattedDate }}</p>
+          <h1 class="display-xl journal-entry__title">{{ page.title }}</h1>
+        </header>
+
+        <img
+          v-if="page.isNewsletter"
+          src="~/assets/9-5.png"
+          alt="Newsletter divider"
+          class="journal-entry__divider"
+        />
+
+        <nuxt-content class="journal-entry__content" :document="page" />
+
+        <img
+          v-if="page.isNewsletter"
+          src="~/assets/5-9.png"
+          alt="Newsletter divider"
+          class="journal-entry__divider"
+        />
+      </article>
+    </section>
+
+    <PageOutro
+      title="Continue exploring the archive"
+      description="Read another entry or follow the weekly newsletter for in-progress notes and ideas."
+      primary-label="Back to Journal"
+      primary-to="/blog"
+      secondary-label="Newsletter"
+      secondary-to="/newsletter"
+    />
   </main>
 </template>
 
 <script>
-import Contact from '~/partials/Contact'
+import PageOutro from '~/components/editorial/PageOutro.vue'
 
 export default {
-  components: {Contact},
+  name: 'BlogPost',
+  components: {
+    PageOutro
+  },
   async asyncData(ctx) {
     const page = await ctx.$content(`blog/${ctx.params.slug}`).fetch()
-    return {
-      page
+    return { page }
+  },
+  computed: {
+    formattedDate() {
+      return new Date(this.page.date).toLocaleDateString('default', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+      })
     }
   },
   head() {
-      return {
-        
-      }
-    },
-    mounted() {
-      
+    return {
+      title: this.page?.title || 'Journal Entry'
+    }
   }
 }
 </script>
 
 <style lang="scss">
-@import '../../styles/_settings.scss';
-
-iframe { height: 100% }
-
-.blog-publish-date {
-  @apply mt-12;
+.journal-entry__surface {
+  width: min(100%, 860px);
+  margin: 0 auto;
+  padding: clamp(1.3rem, 4vw, 3rem);
 }
 
-.blog-title {
-  @apply font-bold;
-  @apply text-5xl;
-  @apply mb-4;
+.journal-entry__header {
+  display: grid;
+  gap: 0.6rem;
+  margin-bottom: 1.2rem;
 }
 
-.content {
-  @apply mx-auto;
-  @apply px-8;
-  max-width: 740px;
+.journal-entry__title {
+  max-width: 14ch;
+  font-size: clamp(2.2rem, 5vw, 4rem);
 }
 
-.nuxt-content {
-  * {
-    color: #9ba9b4;
-  }
+.journal-entry__divider {
+  margin: 1.2rem auto;
+}
 
-  h2 {
-    @apply font-bold;
-    @apply mt-5 mb-5;
-    @apply pb-3;
-    border-bottom: 1px solid $c-border;
-    @apply text-4xl;
-    font-size: 2rem;
-    line-height: 1.3;
-  }
+.journal-entry__content {
+  color: var(--ink);
+}
 
-  h3 {
-    @apply font-bold;
-    @apply mt-5;
-    @apply pb-3;
-    font-size: 1.5rem;
-    line-height: 1.3;
-  }
+.journal-entry__content * {
+  color: inherit;
+}
 
-  a {
-    color: #5d5dff;
-    // text-decoration: underline;
-  }
+.journal-entry__content h2 {
+  margin-top: 1.6rem;
+  margin-bottom: 0.75rem;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.8rem, 3.2vw, 2.5rem);
+  line-height: 1.18;
+}
 
-  a:hover {
-    text-decoration: underline;
-  }
+.journal-entry__content h3 {
+  margin-top: 1.25rem;
+  margin-bottom: 0.55rem;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.4rem, 2.8vw, 2rem);
+  line-height: 1.2;
+}
 
-  p,
-  li {
-    line-height: 1.7;
-    font-size: 16px;
+.journal-entry__content p,
+.journal-entry__content li,
+.journal-entry__content blockquote {
+  line-height: 1.9;
+  font-size: 1.03rem;
+  color: var(--muted);
+}
 
-    @include breakpoint(600px) {
-      font-size: 18px;
-    }
-  }
+.journal-entry__content p,
+.journal-entry__content ul,
+.journal-entry__content ol,
+.journal-entry__content blockquote {
+  margin-bottom: 0.95rem;
+}
 
-  li > ul > li {
-        padding-left: 2rem;
+.journal-entry__content blockquote {
+  border-left: 3px solid var(--accent);
+  padding-left: 0.9rem;
+  font-style: italic;
+}
 
-  }
+.journal-entry__content a {
+  color: var(--accent);
+  text-decoration: underline;
+}
 
-  p {
-    @apply mb-4;
-  }
+.journal-entry__content img,
+.journal-entry__content iframe {
+  width: 100%;
+  border-radius: var(--radius-sm);
+  margin: 1rem 0;
+}
 
-  // ul,
-  ul > li {
-    list-style-type: disc;
-  }
-
-  ol > li {
-    @apply list-decimal;
-    // @apply list-inside;
-    @apply mb-4;
-  }
+.journal-entry__content iframe {
+  min-height: 320px;
 }
 </style>

@@ -14,28 +14,28 @@ module.exports = {
     extend: {
       colors: {
         gray: {
-          100: '#EBF1F5',
-          200: '#D9E3EA',
-          300: '#C5D2DC',
-          400: '#9BA9B4',
-          500: '#707D86',
-          600: '#55595F',
-          700: '#33363A',
-          800: '#25282C',
-          900: '#151719'
+          100: '#fdf9f3',
+          200: '#efe6d6',
+          300: '#ded0bb',
+          400: '#b7a995',
+          500: '#8a7e6d',
+          600: '#6a6258',
+          700: '#4d473f',
+          800: '#2f2b26',
+          900: '#1d1a16'
         },
         purple: {
-          100: '#F4F4FF',
-          200: '#E2E1FF',
-          300: '#CBCCFF',
-          400: '#ABABFF',
-          500: '#8D8DFF',
-          600: '#5D5DFF',
-          700: '#4B4ACF',
-          800: '#38379C',
-          900: '#262668'
+          100: '#f5eddc',
+          200: '#eadac0',
+          300: '#dcc7a0',
+          400: '#c9b07a',
+          500: '#b89a5d',
+          600: '#8f6f3e',
+          700: '#745931',
+          800: '#5f4928',
+          900: '#49381f'
         },
-        backgroundColor: '#000'
+        backgroundColor: '#f6f1e8'
       },
       spacing: {
         '9/16': '56.25%',
@@ -43,8 +43,10 @@ module.exports = {
         '1/1': '100%'
       },
       fontFamily: {
-        inter: ['Inter', 'sans-serif'],
-        'architects-daughter': ['"Architects Daughter"', 'sans-serif']
+        inter: ['Manrope', 'sans-serif'],
+        manrope: ['Manrope', 'sans-serif'],
+        cormorant: ['"Cormorant Garamond"', 'serif'],
+        'architects-daughter': ['"Cormorant Garamond"', 'serif']
       },
       fontSize: {
         xs: '0.75rem',

@@ -1,29 +1,25 @@
-
 <template>
-  <div class="content">
+  <main class="page-space">
     <BlogPostList :list="posts" />
-  </div>
+  </main>
 </template>
 
 <script>
 import BlogPostList from '~/components/BlogPostList'
 
 export default {
+  name: 'BlogIndex',
   components: {
-    
     BlogPostList
   },
   async asyncData({ $content }) {
     const posts = await $content('blog').fetch()
-
+    return { posts }
+  },
+  head() {
     return {
-      posts
+      title: 'Journal'
     }
   }
 }
 </script>
-<style lang="scss">
-@import '../../styles/_settings.scss';
-
-
-</style>
