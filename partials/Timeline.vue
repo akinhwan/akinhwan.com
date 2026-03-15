@@ -452,8 +452,7 @@
 
 <script>
 export default {
-  name: 'Timeline',
+  name: 'Timeline'
 }
 </script>
-<style lang="">
-</style>
+<style lang=""></style>

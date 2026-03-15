@@ -22,6 +22,10 @@ export const siteNavigation = [
   { label: 'Devosuals', to: '/devosuals', group: 'labs' }
 ]
 
-export const primaryNav = siteNavigation.filter((item) => item.group === 'primary')
-export const secondaryNav = siteNavigation.filter((item) => item.group === 'secondary')
+export const primaryNav = siteNavigation.filter(
+  (item) => item.group === 'primary'
+)
+export const secondaryNav = siteNavigation.filter(
+  (item) => item.group === 'secondary'
+)
 export const labsNav = siteNavigation.filter((item) => item.group === 'labs')

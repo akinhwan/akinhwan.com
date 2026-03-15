@@ -17,8 +17,8 @@
     >
       <article class="surface-card about-manifesto">
         <p>
-          I value useful software over flashy demos. The best work is usually the
-          result of consistent iterations, clear feedback loops, and careful
+          I value useful software over flashy demos. The best work is usually
+          the result of consistent iterations, clear feedback loops, and careful
           attention to users.
         </p>
         <p>

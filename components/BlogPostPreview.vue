@@ -3,7 +3,9 @@
     <div class="journal-card__inner">
       <p class="meta">{{ formattedDate }}</p>
       <h2 class="journal-card__title">{{ post.title }}</h2>
-      <p v-if="post.excerpt" class="journal-card__excerpt">{{ post.excerpt }}</p>
+      <p v-if="post.excerpt" class="journal-card__excerpt">
+        {{ post.excerpt }}
+      </p>
       <span class="journal-card__cta">Read Entry</span>
     </div>
   </nuxt-link>

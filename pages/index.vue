@@ -50,7 +50,10 @@
           v-for="post in latestPosts"
           :key="post.path"
           :title="post.title"
-          :description="post.excerpt || 'Open the full post for notes, context, and references.'"
+          :description="
+            post.excerpt ||
+              'Open the full post for notes, context, and references.'
+          "
           :to="post.path"
           :meta="formatDate(post.date)"
         />

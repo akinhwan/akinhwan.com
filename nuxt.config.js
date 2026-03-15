@@ -74,7 +74,10 @@ export default {
   build: {
     postcss: {
       postcssOptions: {
-        plugins: [require('tailwindcss')('./tailwind.config.js'), require('autoprefixer')()]
+        plugins: [
+          require('tailwindcss')('./tailwind.config.js'),
+          require('autoprefixer')()
+        ]
       }
     },
     /*

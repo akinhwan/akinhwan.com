@@ -58,13 +58,13 @@
 </template>
 
 <script>
-import { recommendationPages } from '~/utils/recommendations-data'
 import EditorialCard from './EditorialCard.vue'
 import EmbedPanel from './EmbedPanel.vue'
 import LinkGrid from './LinkGrid.vue'
 import PageHero from './PageHero.vue'
 import PageOutro from './PageOutro.vue'
 import SectionRail from './SectionRail.vue'
+import { recommendationPages } from '~/utils/recommendations-data'
 
 export default {
   name: 'ResourcePage',
@@ -92,12 +92,14 @@ export default {
   },
   computed: {
     resource() {
-      return recommendationPages[this.slug] || {
-        title: 'Collection',
-        lede: '',
-        links: [],
-        embeds: []
-      }
+      return (
+        recommendationPages[this.slug] || {
+          title: 'Collection',
+          lede: '',
+          links: [],
+          embeds: []
+        }
+      )
     }
   },
   methods: {
@@ -115,7 +117,8 @@ export default {
       }
     },
     formatLinkTitle(link, index) {
-      if (link.title && !link.title.startsWith('Resource from')) return link.title
+      if (link.title && !link.title.startsWith('Resource from'))
+        return link.title
       return `${this.resource.title} ${index + 1}`
     },
     embedAspect(src) {

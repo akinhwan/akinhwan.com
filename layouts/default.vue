@@ -95,7 +95,10 @@ img {
   position: absolute;
   inset: 0;
   opacity: 0.2;
-  background-image: radial-gradient(rgba(25, 22, 18, 0.08) 0.35px, transparent 0.35px);
+  background-image: radial-gradient(
+    rgba(25, 22, 18, 0.08) 0.35px,
+    transparent 0.35px
+  );
   background-size: 5px 5px;
 }
 
@@ -111,7 +114,11 @@ img {
   aspect-ratio: 1;
   top: -12vw;
   right: -10vw;
-  background: radial-gradient(circle at 30% 30%, #e8d5b2 0%, rgba(232, 213, 178, 0) 72%);
+  background: radial-gradient(
+    circle at 30% 30%,
+    #e8d5b2 0%,
+    rgba(232, 213, 178, 0) 72%
+  );
 }
 
 .site-atmosphere__orb--two {
@@ -119,7 +126,11 @@ img {
   aspect-ratio: 1;
   bottom: -11vw;
   left: -9vw;
-  background: radial-gradient(circle at 60% 60%, #d9ccb3 0%, rgba(217, 204, 179, 0) 70%);
+  background: radial-gradient(
+    circle at 60% 60%,
+    #d9ccb3 0%,
+    rgba(217, 204, 179, 0) 70%
+  );
 }
 
 .content {
@@ -138,7 +149,11 @@ img {
 }
 
 .surface-card {
-  background: linear-gradient(160deg, rgba(255, 255, 255, 0.68), rgba(255, 251, 245, 0.92));
+  background: linear-gradient(
+    160deg,
+    rgba(255, 255, 255, 0.68),
+    rgba(255, 251, 245, 0.92)
+  );
   border: 1px solid rgba(31, 24, 14, 0.11);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-soft);

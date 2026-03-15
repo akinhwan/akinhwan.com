@@ -4,10 +4,8 @@
       <div class="py-6">
         <!-- Carousel area-->
         <div class="max-w-2xl mx-auto">
-
           <!-- Carousel -->
           <div class="mt-6">
-
             <!-- Testimonials -->
             <transition-group
               tag="div"
@@ -38,43 +36,40 @@
                 </div>
               </template> -->
               <template>
-                <div :key="0"
-                  v-show="active === 0"
-                  >
-                  <img src="~/assets/tweet3.png" alt="">
+                <div v-show="active === 0" :key="0">
+                  <img src="~/assets/tweet3.png" alt="" />
                 </div>
-                <div :key="1"
-                  v-show="active === 1"
-                  >
-                  <img src="~/assets/tweet2.png" alt="">
-                  </div>
-                <div :key="2"
-                  v-show="active === 2"
-                  >
-                  <img src="~/assets/tweet4.png" alt="">
-                   </div>
-                <div :key="3"
-                  v-show="active === 3"
-                  >
-                  <img src="~/assets/tweet1.png" alt="">
-                  
-                   </div>
+                <div v-show="active === 1" :key="1">
+                  <img src="~/assets/tweet2.png" alt="" />
+                </div>
+                <div v-show="active === 2" :key="2">
+                  <img src="~/assets/tweet4.png" alt="" />
+                </div>
+                <div v-show="active === 3" :key="3">
+                  <img src="~/assets/tweet1.png" alt="" />
+                </div>
               </template>
             </transition-group>
 
             <!-- Bullets -->
             <div class="flex justify-center mt-6">
-
               <template v-for="(item, index) in items">
-                <button class="p-1 group" :key="index" @click="active = index; stopAutorotate();">
-                  <span class="block w-2 h-2 rounded-full group-hover:bg-gray-400 transition duration-150 ease-in-out" :class="active === index ? 'bg-gray-200' : 'bg-gray-500'"></span>
+                <button
+                  :key="index"
+                  class="p-1 group"
+                  @click="
+                    active = index
+                    stopAutorotate()
+                  "
+                >
+                  <span
+                    class="block w-2 h-2 rounded-full group-hover:bg-gray-400 transition duration-150 ease-in-out"
+                    :class="active === index ? 'bg-gray-200' : 'bg-gray-500'"
+                  ></span>
                 </button>
               </template>
-
             </div>
-
           </div>
-
         </div>
       </div>
     </div>
@@ -84,7 +79,7 @@
 <script>
 export default {
   name: 'TestimonialsCarousel',
-  data: function () {
+  data() {
     return {
       active: 0,
       autorotate: true,
@@ -93,53 +88,58 @@ export default {
         {
           img: 'tc-crop-purple.png',
           alt: 'Testimonial 01',
-          quote: '“ I want my readers to be inspired to design their own life and make money online by scaling their talents.“',
+          quote:
+            '“ I want my readers to be inspired to design their own life and make money online by scaling their talents.“',
           name: 'Andrew Kim',
           role: 'IndieHacker'
         },
         {
           img: 'tc-crop-purple.png',
           alt: 'Testimonial 02',
-          quote: '“ I want to quit working for somebody else, and build up my own dream no matter how difficult it may be.“',
+          quote:
+            '“ I want to quit working for somebody else, and build up my own dream no matter how difficult it may be.“',
           name: 'Andrew Kim',
           role: 'IndieHacker'
         },
         {
           img: 'tc-crop-purple.png',
           alt: 'Testimonial 03',
-          quote: '“ I am grateful for every single person who cares to learn from my failures, and want to connect with you. I respond to every message!“',
+          quote:
+            '“ I am grateful for every single person who cares to learn from my failures, and want to connect with you. I respond to every message!“',
           name: 'Andrew Kim',
           role: 'IndieHacker'
         },
         {
           img: 'tc-crop-purple.png',
           alt: 'Testimonial 03',
-          quote: '“ I am grateful for every single person who cares to learn from my failures, and want to connect with you. I respond to every message!“',
+          quote:
+            '“ I am grateful for every single person who cares to learn from my failures, and want to connect with you. I respond to every message!“',
           name: 'Andrew Kim',
           role: 'IndieHacker'
-        }         
+        }
       ]
     }
   },
-  methods: {
-    stopAutorotate() {
-      clearInterval(this.autorotateInterval)
-    }  
-  },    
   mounted() {
     if (this.autorotate) {
-        this.autorotateInterval = setInterval(() => {
-            this.active = this.active + 1 === this.items.length ? 0 : this.active + 1
-        }, this.autorotateTiming)
+      this.autorotateInterval = setInterval(() => {
+        this.active =
+          this.active + 1 === this.items.length ? 0 : this.active + 1
+      }, this.autorotateTiming)
     }
   },
   beforeDestroy() {
     this.stopAutorotate()
-  }    
+  },
+  methods: {
+    stopAutorotate() {
+      clearInterval(this.autorotateInterval)
+    }
+  }
 }
 </script>
 <style lang="scss">
-  img {
-    max-width: 30rem;
-  }
+img {
+  max-width: 30rem;
+}
 </style>

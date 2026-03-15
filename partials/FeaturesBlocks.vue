@@ -10,42 +10,139 @@
         </div> -->
 
         <!-- Items -->
-        <div class="max-w-sm mx-auto grid gap-8 md:grid-cols-2 lg:grid-cols-3 lg:gap-16 items-start md:max-w-2xl lg:max-w-none" data-aos-id-blocks>
-
+        <div
+          class="max-w-sm mx-auto grid gap-8 md:grid-cols-2 lg:grid-cols-3 lg:gap-16 items-start md:max-w-2xl lg:max-w-none"
+          data-aos-id-blocks
+        >
           <!-- 1st item -->
-          <div class="relative flex flex-col items-center" data-aos="fade-up" data-aos-anchor="[data-aos-id-blocks]">
-            <svg class="w-16 h-16 mb-4" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-              <rect class="fill-current text-purple-600" width="64" height="64" rx="32" />
-              <path class="stroke-current text-purple-100" d="M30 39.313l-4.18 2.197L27 34.628l-5-4.874 6.91-1.004L32 22.49l3.09 6.26L42 29.754l-3 2.924" stroke-linecap="square" stroke-width="2" fill="none" fill-rule="evenodd" />
-              <path class="stroke-current text-purple-300" d="M43 42h-9M43 37h-9" stroke-linecap="square" stroke-width="2" />
+          <div
+            class="relative flex flex-col items-center"
+            data-aos="fade-up"
+            data-aos-anchor="[data-aos-id-blocks]"
+          >
+            <svg
+              class="w-16 h-16 mb-4"
+              viewBox="0 0 64 64"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                class="fill-current text-purple-600"
+                width="64"
+                height="64"
+                rx="32"
+              />
+              <path
+                class="stroke-current text-purple-100"
+                d="M30 39.313l-4.18 2.197L27 34.628l-5-4.874 6.91-1.004L32 22.49l3.09 6.26L42 29.754l-3 2.924"
+                stroke-linecap="square"
+                stroke-width="2"
+                fill="none"
+                fill-rule="evenodd"
+              />
+              <path
+                class="stroke-current text-purple-300"
+                d="M43 42h-9M43 37h-9"
+                stroke-linecap="square"
+                stroke-width="2"
+              />
             </svg>
             <h4 class="h4 mb-2">Highlights & Setbacks</h4>
-            <p class="text-lg text-gray-400 text-center">This section will provide quick tidbits about what went well and wrong. Encompassing not only my work but personal stories.</p>
+            <p class="text-lg text-gray-400 text-center">
+              This section will provide quick tidbits about what went well and
+              wrong. Encompassing not only my work but personal stories.
+            </p>
           </div>
 
           <!-- 2nd item -->
-          <div class="relative flex flex-col items-center" data-aos="fade-up" data-aos-delay="100" data-aos-anchor="[data-aos-id-blocks]">
-            <svg class="w-16 h-16 mb-4" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-              <circle class="fill-current text-purple-600" cx="32" cy="32" r="32" />
-              <path class="stroke-current text-purple-100" stroke-width="2" stroke-linecap="square" d="M21 23h22v18H21z" fill="none" fill-rule="evenodd" />
-              <path class="stroke-current text-purple-300" d="M26 28h12M26 32h12M26 36h5" stroke-width="2" stroke-linecap="square" />
+          <div
+            class="relative flex flex-col items-center"
+            data-aos="fade-up"
+            data-aos-delay="100"
+            data-aos-anchor="[data-aos-id-blocks]"
+          >
+            <svg
+              class="w-16 h-16 mb-4"
+              viewBox="0 0 64 64"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                class="fill-current text-purple-600"
+                cx="32"
+                cy="32"
+                r="32"
+              />
+              <path
+                class="stroke-current text-purple-100"
+                stroke-width="2"
+                stroke-linecap="square"
+                d="M21 23h22v18H21z"
+                fill="none"
+                fill-rule="evenodd"
+              />
+              <path
+                class="stroke-current text-purple-300"
+                d="M26 28h12M26 32h12M26 36h5"
+                stroke-width="2"
+                stroke-linecap="square"
+              />
             </svg>
             <h4 class="h4 mb-2">Goal setting</h4>
-            <p class="text-lg text-gray-400 text-center">I will try to predict and envision what I can achieve in the following 7 days. While you get to see what I ended up doing, and how I got there.</p>
+            <p class="text-lg text-gray-400 text-center">
+              I will try to predict and envision what I can achieve in the
+              following 7 days. While you get to see what I ended up doing, and
+              how I got there.
+            </p>
           </div>
 
           <!-- 3rd item -->
-          <div class="relative flex flex-col items-center" data-aos="fade-up" data-aos-delay="200" data-aos-anchor="[data-aos-id-blocks]">
-            <svg class="w-16 h-16 mb-4" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-              <rect class="fill-current text-purple-600" width="64" height="64" rx="32" />
-              <g transform="translate(21 21)" stroke-linecap="square" stroke-width="2" fill="none" fill-rule="evenodd">
-                <ellipse class="stroke-current text-purple-300" cx="11" cy="11" rx="5.5" ry="11" />
-                <path class="stroke-current text-purple-100" d="M11 0v22M0 11h22" />
-                <circle class="stroke-current text-purple-100" cx="11" cy="11" r="11" />
+          <div
+            class="relative flex flex-col items-center"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-anchor="[data-aos-id-blocks]"
+          >
+            <svg
+              class="w-16 h-16 mb-4"
+              viewBox="0 0 64 64"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                class="fill-current text-purple-600"
+                width="64"
+                height="64"
+                rx="32"
+              />
+              <g
+                transform="translate(21 21)"
+                stroke-linecap="square"
+                stroke-width="2"
+                fill="none"
+                fill-rule="evenodd"
+              >
+                <ellipse
+                  class="stroke-current text-purple-300"
+                  cx="11"
+                  cy="11"
+                  rx="5.5"
+                  ry="11"
+                />
+                <path
+                  class="stroke-current text-purple-100"
+                  d="M11 0v22M0 11h22"
+                />
+                <circle
+                  class="stroke-current text-purple-100"
+                  cx="11"
+                  cy="11"
+                  r="11"
+                />
               </g>
             </svg>
             <h4 class="h4 mb-2">Curated links</h4>
-            <p class="text-lg text-gray-400 text-center">I will be recommending my favorite links worthy of your attention that hopefully inspire you, or provide some insight.</p>
+            <p class="text-lg text-gray-400 text-center">
+              I will be recommending my favorite links worthy of your attention
+              that hopefully inspire you, or provide some insight.
+            </p>
           </div>
 
           <!-- 4th item -->
@@ -87,9 +184,7 @@
             <h4 class="h4 mb-2">Instant Features</h4>
             <p class="text-lg text-gray-400 text-center">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.</p>
           </div> -->
-
         </div>
-
       </div>
     </div>
   </section>
@@ -100,6 +195,4 @@ export default {
   name: 'FeaturesBlocks'
 }
 </script>
-<style lang="">
-  
-</style>
+<style lang=""></style>

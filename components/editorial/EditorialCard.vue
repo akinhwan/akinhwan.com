@@ -14,7 +14,9 @@
     <div class="editorial-card__copy">
       <p v-if="meta" class="meta">{{ meta }}</p>
       <h3 class="editorial-card__title">{{ title }}</h3>
-      <p v-if="description" class="editorial-card__description">{{ description }}</p>
+      <p v-if="description" class="editorial-card__description">
+        {{ description }}
+      </p>
       <span class="editorial-card__cta">Explore</span>
     </div>
   </component>

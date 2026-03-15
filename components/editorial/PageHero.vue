@@ -11,7 +11,11 @@
       </div>
 
       <figure v-if="mediaSrc" class="page-hero__media-wrap">
-        <img :src="mediaSrc" :alt="mediaAlt || title" class="page-hero__media" />
+        <img
+          :src="mediaSrc"
+          :alt="mediaAlt || title"
+          class="page-hero__media"
+        />
       </figure>
     </div>
   </section>
