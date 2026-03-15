@@ -441,8 +441,7 @@
 
 <script>
 export default {
-  name: 'Testimonials',
+  name: 'Testimonials'
 }
 </script>
-<style lang="">
-</style>
+<style lang=""></style>

@@ -5,7 +5,9 @@ export default {
    ** Headers of the page
    */
   head: {
-    title: process.env.npm_package_name || '',
+    titleTemplate: (titleChunk) =>
+      titleChunk ? `${titleChunk} · Andrew Kim` : 'Andrew Kim',
+    title: process.env.npm_package_name || 'Andrew Kim',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -19,7 +21,7 @@ export default {
       {
         rel: 'stylesheet',
         href:
-          'https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Inter&display=swap'
+          'https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap'
       },
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
@@ -31,7 +33,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: [],
+  css: ['~/assets/css/tailwind.css'],
   /*
    ** Plugins to load before mounting the App
    */
@@ -43,8 +45,7 @@ export default {
     // Doc: https://github.com/nuxt-community/eslint-module
     // '@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/stylelint-module
-    '@nuxtjs/stylelint-module',
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/stylelint-module'
   ],
   /*
    ** Nuxt.js modules
@@ -71,6 +72,14 @@ export default {
    ** Build configuration
    */
   build: {
+    postcss: {
+      postcssOptions: {
+        plugins: [
+          require('tailwindcss')('./tailwind.config.js'),
+          require('autoprefixer')()
+        ]
+      }
+    },
     /*
      ** You can extend webpack config here
      */

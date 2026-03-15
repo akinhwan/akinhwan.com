@@ -164,12 +164,11 @@ export default {
   components: {
     // Modal
   },
-  data: function () {
+  data() {
     return {
       // videoModalOpen: false
     }
-  },
+  }
 }
 </script>
-<style lang="">
-</style>
+<style lang=""></style>

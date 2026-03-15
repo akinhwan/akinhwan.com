@@ -1,161 +1,335 @@
 <template>
-  <nav class="navbar">
-    <!-- <header class="absolute w-full z-30"> -->
-    <div class="max-w-6xl mx-auto px-4 sm:px-6">
-      <div class="flex items-center justify-between h-20">
+  <header class="site-header" :class="{ 'is-scrolled': scrolled }">
+    <div class="site-header__inner">
+      <router-link class="site-logo" to="/">Andrew Kim</router-link>
 
-        <!-- Site branding -->
-        <!-- <div class="flex-shrink-0 mr-4"> -->
-          <!-- Logo -->
-          <!-- <router-link to="/" class="block" aria-label="logo">
-            <img class="rounded-full" :src="require('~/assets/profile2.jpg')" width="32" height="32" alt="Team mosaic 01" />
-            <svg class="w-8 h-8 fill-current text-purple-600" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-              <path d="M31.952 14.751a260.51 260.51 0 00-4.359-4.407C23.932 6.734 20.16 3.182 16.171 0c1.634.017 3.21.28 4.692.751 3.487 3.114 6.846 6.398 10.163 9.737.493 1.346.811 2.776.926 4.262zm-1.388 7.883c-2.496-2.597-5.051-5.12-7.737-7.471-3.706-3.246-10.693-9.81-15.736-7.418-4.552 2.158-4.717 10.543-4.96 16.238A15.926 15.926 0 010 16C0 9.799 3.528 4.421 8.686 1.766c1.82.593 3.593 1.675 5.038 2.587 6.569 4.14 12.29 9.71 17.792 15.57-.237.94-.557 1.846-.952 2.711zm-4.505 5.81a56.161 56.161 0 00-1.007-.823c-2.574-2.054-6.087-4.805-9.394-4.044-3.022.695-4.264 4.267-4.97 7.52a15.945 15.945 0 01-3.665-1.85c.366-3.242.89-6.675 2.405-9.364 2.315-4.107 6.287-3.072 9.613-1.132 3.36 1.96 6.417 4.572 9.313 7.417a16.097 16.097 0 01-2.295 2.275z" />
-            </svg>
-          </router-link> -->
-        <!-- </div> -->
+      <nav class="site-primary-nav" aria-label="Primary navigation">
+        <router-link
+          v-for="item in primaryNav"
+          :key="item.to"
+          :to="item.to"
+          class="site-primary-link"
+        >
+          {{ item.label }}
+        </router-link>
+      </nav>
 
-        <!-- Desktop navigation -->
-        <nav class="hidden md:flex md:flex-grow">
-          <!-- Desktop menu links -->
-          <ul class="flex flex-grow justify-center flex-wrap items-center">
-            <li>
-              <router-link to="/" class="text-gray-300 hover:text-gray-200 px-4 py-2 flex items-center transition duration-150 ease-in-out">Home</router-link>
-            </li>
-            <li>
-              <router-link to="/blog" class="text-gray-300 hover:text-gray-200 px-4 py-2 flex items-center transition duration-150 ease-in-out">Blog</router-link>
-            </li>
-            <li>
-              <router-link to="/newsletter" class="text-gray-300 hover:text-gray-200 px-4 py-2 flex items-center transition duration-150 ease-in-out">Newsletter</router-link>
-            </li>
-            <li>
-              <router-link to="/about" class="text-gray-300 hover:text-gray-200 px-4 py-2 flex items-center transition duration-150 ease-in-out">About</router-link>
-            </li>
-          </ul>
-        </nav>
+      <button
+        ref="menuButton"
+        class="site-menu-trigger"
+        type="button"
+        aria-haspopup="true"
+        :aria-expanded="isMenuOpen.toString()"
+        aria-controls="site-overlay-menu"
+        @click="toggleMenu"
+      >
+        <span class="sr-only">Toggle menu</span>
+        <span v-if="!isMenuOpen">Menu</span>
+        <span v-else>Close</span>
+      </button>
+    </div>
 
-        <!-- Mobile menu -->
-        <div class="md:hidden">
-
-          <!-- Hamburger button -->
-          <button class="hamburger" ref="hamburger" :class="{ active: mobileNavOpen }" aria-controls="mobile-nav" :aria-expanded="mobileNavOpen" @click="mobileNavOpen = !mobileNavOpen">
-            <span class="sr-only">Menu</span>
-            <svg class="w-6 h-6 fill-current text-gray-300 hover:text-gray-200 transition duration-150 ease-in-out" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <rect y="4" width="24" height="2" rx="1" />
-              <rect y="11" width="24" height="2" rx="1" />
-              <rect y="18" width="24" height="2" rx="1" />
-            </svg>
-          </button>
-
-          <!-- Mobile navigation -->
-          <nav id="mobile-nav" ref="mobileNav" class="absolute z-20 left-0 w-full px-4 sm:px-6 overflow-hidden transition-all duration-300 ease-in-out" :style="[ mobileNavOpen ? { maxHeight: $refs.mobileNav.scrollHeight + 'px', opacity: 1 } : { maxHeight: 0, opacity: .8 } ]">
-            <ul class="bg-gray-800 px-4 py-2">
-              <li>
-                <router-link to="/" class="flex text-gray-300 hover:text-gray-200 py-2">Home</router-link>
-              </li>
-              <li>
-                <router-link to="/blog" class="flex text-gray-300 hover:text-gray-200 py-2">Blog</router-link>
-              </li>
-              <li>
-                <router-link to="/newsletter" class="flex text-gray-300 hover:text-gray-200 py-2">Newsletter</router-link>
-              </li>
-              <li>
-                <router-link to="/about" class="flex text-gray-300 hover:text-gray-200 py-2">About</router-link>
+    <transition name="overlay-fade">
+      <div
+        v-if="isMenuOpen"
+        id="site-overlay-menu"
+        ref="overlay"
+        class="site-overlay"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Site menu"
+        @click.self="closeMenu"
+      >
+        <div class="site-overlay__content">
+          <section class="site-overlay__section">
+            <p class="eyebrow">Primary</p>
+            <ul class="site-overlay__list">
+              <li v-for="item in primaryNav" :key="`primary-${item.to}`">
+                <router-link
+                  :to="item.to"
+                  class="site-overlay__link"
+                  @click.native="closeMenu"
+                >
+                  {{ item.label }}
+                </router-link>
               </li>
             </ul>
-          </nav>
+          </section>
 
+          <section class="site-overlay__section">
+            <p class="eyebrow">Recommendations</p>
+            <ul class="site-overlay__list">
+              <li v-for="item in secondaryNav" :key="`secondary-${item.to}`">
+                <router-link
+                  :to="item.to"
+                  class="site-overlay__link"
+                  @click.native="closeMenu"
+                >
+                  {{ item.label }}
+                </router-link>
+              </li>
+            </ul>
+          </section>
+
+          <section class="site-overlay__section">
+            <p class="eyebrow">Labs</p>
+            <ul class="site-overlay__list">
+              <li v-for="item in labsNav" :key="`labs-${item.to}`">
+                <router-link
+                  :to="item.to"
+                  class="site-overlay__link"
+                  @click.native="closeMenu"
+                >
+                  {{ item.label }}
+                </router-link>
+              </li>
+            </ul>
+          </section>
         </div>
-
       </div>
-    </div>
-  <!-- </header> -->
-  </nav>
+    </transition>
+  </header>
 </template>
 
 <script>
+import {
+  labsNav as labsNavLinks,
+  primaryNav as primaryNavLinks,
+  secondaryNav as secondaryNavLinks
+} from '~/utils/navigation'
 
 export default {
-  components: {
-    // Dropdown
-  },
-  data: function () {
+  name: 'AppNavbar',
+  data() {
     return {
-      mobileNavOpen: false
+      isMenuOpen: false,
+      scrolled: false,
+      previouslyFocusedElement: null
     }
   },
-  methods: {
-    clickOutside(e) {
-      if (!this.mobileNavOpen || this.$refs.mobileNav.contains(e.target) || this.$refs.hamburger.contains(e.target)) return
-      this.mobileNavOpen = false
+  computed: {
+    primaryNav() {
+      return primaryNavLinks
     },
-    keyPress() {
-      if (!this.mobileNavOpen || event.keyCode !== 27) return
-      this.mobileNavOpen = false
-    }    
-  },  
+    secondaryNav() {
+      return secondaryNavLinks
+    },
+    labsNav() {
+      return labsNavLinks
+    }
+  },
+  watch: {
+    $route() {
+      this.closeMenu()
+    },
+    isMenuOpen(value) {
+      document.body.classList.toggle('overlay-menu-open', value)
+      if (value) {
+        this.$nextTick(() => {
+          const firstLink = this.$refs.overlay.querySelector('a')
+          if (firstLink) firstLink.focus()
+        })
+      }
+    }
+  },
   mounted() {
-    document.addEventListener('click', this.clickOutside)    
-    document.addEventListener('keydown', this.keyPress)
+    this.onScroll()
+    window.addEventListener('scroll', this.onScroll, { passive: true })
+    document.addEventListener('keydown', this.onKeyDown)
   },
   beforeDestroy() {
-    document.removeEventListener('click', this.clickOutside)
-    document.removeEventListener('keydown', this.keyPress)
+    document.body.classList.remove('overlay-menu-open')
+    window.removeEventListener('scroll', this.onScroll)
+    document.removeEventListener('keydown', this.onKeyDown)
+  },
+  methods: {
+    toggleMenu() {
+      if (this.isMenuOpen) {
+        this.closeMenu()
+      } else {
+        this.openMenu()
+      }
+    },
+    openMenu() {
+      this.previouslyFocusedElement = document.activeElement
+      this.isMenuOpen = true
+    },
+    closeMenu() {
+      if (!this.isMenuOpen) return
+      this.isMenuOpen = false
+      this.$nextTick(() => {
+        if (
+          this.previouslyFocusedElement &&
+          typeof this.previouslyFocusedElement.focus === 'function'
+        ) {
+          this.previouslyFocusedElement.focus()
+        } else if (this.$refs.menuButton) {
+          this.$refs.menuButton.focus()
+        }
+      })
+    },
+    onScroll() {
+      this.scrolled = window.scrollY > 12
+    },
+    onKeyDown(event) {
+      if (event.key === 'Escape' && this.isMenuOpen) {
+        this.closeMenu()
+      }
+    }
   }
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import '../styles/_settings.scss';
 
-.navbar {
-  @apply py-3 px-5;
-  // border-bottom: 2px solid $c-border;
-  color: $c-nav-link;
-  // font-family: $ff-sans;
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 60;
+  width: 100%;
+  backdrop-filter: blur(0);
+  transition: background-color var(--duration-fast) var(--ease-out),
+    border-color var(--duration-fast) var(--ease-out),
+    box-shadow var(--duration-fast) var(--ease-out),
+    backdrop-filter var(--duration-fast) var(--ease-out);
+  border-bottom: 1px solid transparent;
+}
 
-  @include breakpoint($bk-navbar) {
-    @apply flex justify-between items-center;
+.site-header.is-scrolled {
+  background: rgba(246, 241, 232, 0.86);
+  border-color: var(--line);
+  box-shadow: 0 6px 20px rgba(27, 23, 18, 0.08);
+  backdrop-filter: blur(8px);
+}
+
+.site-header__inner {
+  width: min(calc(100% - 2rem), var(--container-width));
+  margin: 0 auto;
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.site-logo {
+  font-family: 'Cormorant Garamond', serif;
+  color: var(--ink);
+  font-size: 1.5rem;
+  letter-spacing: 0.03em;
+}
+
+.site-primary-nav {
+  display: none;
+
+  @media (min-width: 900px) {
+    display: flex;
+    gap: 1.15rem;
+    align-items: center;
   }
 }
 
-.navbar-item {
-  @apply mr-5;
-  font-size: 0.9rem;
-  @apply font-medium;
+.site-primary-link {
+  font-family: 'Manrope', sans-serif;
+  color: var(--ink);
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 600;
+  opacity: 0.8;
+  transition: opacity var(--duration-fast) var(--ease-out),
+    color var(--duration-fast) var(--ease-out);
+}
 
-  &:last-child {
-    @apply mr-0;
+.site-primary-link:hover,
+.site-primary-link.nuxt-link-exact-active {
+  opacity: 1;
+  color: var(--accent);
+}
+
+.site-menu-trigger {
+  font-family: 'Manrope', sans-serif;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.45rem 1rem;
+  color: var(--ink);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0.42);
+  transition: background-color var(--duration-fast) var(--ease-out),
+    color var(--duration-fast) var(--ease-out),
+    border-color var(--duration-fast) var(--ease-out);
+}
+
+.site-menu-trigger:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: #fff;
+}
+
+.site-overlay {
+  position: fixed;
+  inset: 0;
+  background: var(--overlay);
+  z-index: 80;
+  color: #f5efe2;
+  overflow-y: auto;
+}
+
+.site-overlay__content {
+  width: min(calc(100% - 2rem), 1080px);
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 6rem 0 4rem;
+  display: grid;
+  gap: 2.2rem;
+
+  @media (min-width: 900px) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
-
-  &:hover {
-    border-bottom: 2px solid $c-primary;
-  }
 }
 
-.navbar-item-wrapper {
-  @apply text-center;
+.site-overlay__section {
+  border-top: 1px solid rgba(255, 255, 255, 0.22);
+  padding-top: 1rem;
 }
 
-.navbar-logo {
-  @apply flex items-center;
-  @apply mx-auto mb-3;
-  font-size: 1.3rem;
-  @apply font-semibold;
-
-  @include breakpoint($bk-navbar) {
-    @apply mb-0;
-  }
+.site-overlay__section .eyebrow {
+  color: rgba(255, 255, 255, 0.7);
 }
 
-.navbar-logo-image {
-  @apply inline-block;
-  width: 36px;
-  @apply mr-3;
+.site-overlay__list {
+  margin-top: 0.95rem;
+  display: grid;
+  gap: 0.5rem;
 }
 
-// Generated by Nuxt Router
-.nuxt-link-exact-active {
-  border-bottom: 2px solid $c-primary;
+.site-overlay__link {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
+  color: #f8f3e8;
+  line-height: 1.2;
+  transition: color var(--duration-fast) var(--ease-out),
+    transform var(--duration-fast) var(--ease-out);
+  display: inline-block;
+}
+
+.site-overlay__link:hover,
+.site-overlay__link:focus {
+  color: #d9bf8a;
+  transform: translateX(3px);
+}
+
+.overlay-fade-enter-active,
+.overlay-fade-leave-active {
+  transition: opacity var(--duration-base) var(--ease-out);
+}
+
+.overlay-fade-enter,
+.overlay-fade-leave-to {
+  opacity: 0;
 }
 </style>

@@ -9,7 +9,11 @@
       leave-class="opacity-100"
       leave-to-class="opacity-0"
     >
-      <div v-show="show" class="fixed inset-0 z-50 bg-black bg-opacity-75 transition-opacity" aria-hidden="true"></div>
+      <div
+        v-show="show"
+        class="fixed inset-0 z-50 bg-black bg-opacity-75 transition-opacity"
+        aria-hidden="true"
+      ></div>
     </transition>
 
     <!-- Modal dialog -->
@@ -29,7 +33,10 @@
         aria-modal="true"
         :aria-labelledby="ariaLabel"
       >
-        <div class="bg-white overflow-auto max-w-6xl w-full max-h-full" ref="modalContent">          
+        <div
+          ref="modalContent"
+          class="bg-white overflow-auto max-w-6xl w-full max-h-full"
+        >
           <slot />
         </div>
       </div>
@@ -53,7 +60,15 @@ export default {
       type: Boolean,
       default: false,
       required: true
-    },
+    }
+  },
+  mounted() {
+    document.addEventListener('click', this.clickOutside)
+    document.addEventListener('keydown', this.keyPress)
+  },
+  beforeDestroy() {
+    document.removeEventListener('click', this.clickOutside)
+    document.removeEventListener('keydown', this.keyPress)
   },
   methods: {
     clickOutside(e) {
@@ -63,15 +78,7 @@ export default {
     keyPress() {
       if (!this.show || event.keyCode !== 27) return
       this.$emit('handleClose')
-    }    
-  },  
-  mounted() {
-    document.addEventListener('click', this.clickOutside)    
-    document.addEventListener('keydown', this.keyPress)
-  },
-  beforeDestroy() {
-    document.removeEventListener('click', this.clickOutside)
-    document.removeEventListener('keydown', this.keyPress)
-  }  
+    }
+  }
 }
 </script>

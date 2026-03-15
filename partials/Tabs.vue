@@ -170,7 +170,7 @@
               leave-class="opacity-100 scale-100"
               leave-to-class="opacity-0 scale-98"
             >
-              <div class="w-full" v-show="tab === '1'">
+              <div v-show="tab === '1'" class="w-full">
                 <article class="relative max-w-md mx-auto md:max-w-none">
                   <figure class="md:absolute md:inset-y-0 md:left-0 md:w-1/2">
                     <img
@@ -220,7 +220,7 @@
               leave-class="opacity-100 scale-100"
               leave-to-class="opacity-0 scale-98"
             >
-              <div class="w-full" v-show="tab === '3'">
+              <div v-show="tab === '3'" class="w-full">
                 <article class="relative max-w-md mx-auto md:max-w-none">
                   <figure class="md:absolute md:inset-y-0 md:left-0 md:w-1/2">
                     <img
@@ -270,7 +270,7 @@
               leave-class="opacity-100 scale-100"
               leave-to-class="opacity-0 scale-98"
             >
-              <div class="w-full" v-show="tab === '2'">
+              <div v-show="tab === '2'" class="w-full">
                 <article class="relative max-w-md mx-auto md:max-w-none">
                   <figure class="md:absolute md:inset-y-0 md:left-0 md:w-1/2">
                     <img
@@ -320,7 +320,7 @@
               leave-class="opacity-100 scale-100"
               leave-to-class="opacity-0 scale-98"
             >
-              <div class="w-full" v-show="tab === '4'">
+              <div v-show="tab === '4'" class="w-full">
                 <article class="relative max-w-md mx-auto md:max-w-none">
                   <figure class="md:absolute md:inset-y-0 md:left-0 md:w-1/2">
                     <img
@@ -336,7 +336,9 @@
                   >
                     <h4 class="h4 mb-2">Memotrix</h4>
                     <p class="text-lg text-gray-400">
-                      A web game inspired by a lumosity style memory game. See how many levels you can get to and add your name to the leaderboard!
+                      A web game inspired by a lumosity style memory game. See
+                      how many levels you can get to and add your name to the
+                      leaderboard!
                     </p>
                     <a
                       class="btn-sm text-white bg-purple-600 hover:bg-purple-700 mt-6"
@@ -365,7 +367,7 @@
               leave-class="opacity-100 scale-100"
               leave-to-class="opacity-0 scale-98"
             >
-              <div class="w-full" v-show="tab === '5'">
+              <div v-show="tab === '5'" class="w-full">
                 <article class="relative max-w-md mx-auto md:max-w-none">
                   <figure class="md:absolute md:inset-y-0 md:left-0 md:w-1/2">
                     <img
@@ -412,7 +414,7 @@
               leave-class="opacity-100 scale-100"
               leave-to-class="opacity-0 scale-98"
             >
-              <div class="w-full" v-show="tab === '6'">
+              <div v-show="tab === '6'" class="w-full">
                 <article class="relative max-w-md mx-auto md:max-w-none">
                   <figure class="md:absolute md:inset-y-0 md:left-0 md:w-1/2">
                     <img
@@ -489,12 +491,11 @@
 <script>
 export default {
   name: 'Tabs',
-  data: function () {
+  data() {
     return {
-      tab: '1',
+      tab: '1'
     }
-  },
+  }
 }
 </script>
-<style lang="">
-</style>
+<style lang=""></style>
