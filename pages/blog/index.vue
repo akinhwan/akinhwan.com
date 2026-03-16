@@ -6,6 +6,7 @@
 
 <script>
 import BlogPostList from '~/components/BlogPostList'
+import blog from '~/utils/blog'
 
 export default {
   name: 'BlogIndex',
@@ -13,7 +14,7 @@ export default {
     BlogPostList
   },
   async asyncData({ $content }) {
-    const posts = await $content('blog').fetch()
+    const posts = await blog.fetchPublishedBlogPosts($content)
     return { posts }
   },
   head() {

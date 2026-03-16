@@ -39,28 +39,39 @@
 
 <script>
 import PageOutro from '~/components/editorial/PageOutro.vue'
+import blog from '~/utils/blog'
 
 export default {
   name: 'BlogPost',
   components: {
     PageOutro
   },
-  async asyncData(ctx) {
-    const page = await ctx.$content(`blog/${ctx.params.slug}`).fetch()
-    return { page }
+  async asyncData({ $content, params, error }) {
+    try {
+      const page = await blog.fetchBlogPostBySlug($content, params.slug)
+      return { page }
+    } catch (err) {
+      error({ statusCode: 404, message: 'Journal entry not found' })
+      return { page: null }
+    }
   },
   computed: {
     formattedDate() {
-      return new Date(this.page.date).toLocaleDateString('default', {
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric'
-      })
+      return blog.formatPostDate(this.page?.date)
     }
   },
   head() {
     return {
-      title: this.page?.title || 'Journal Entry'
+      title: this.page?.title || 'Journal Entry',
+      meta: this.page?.excerpt
+        ? [
+            {
+              hid: 'description',
+              name: 'description',
+              content: this.page.excerpt
+            }
+          ]
+        : []
     }
   }
 }

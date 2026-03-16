@@ -12,6 +12,8 @@
 </template>
 
 <script>
+import blog from '~/utils/blog'
+
 export default {
   name: 'BlogPostPreview',
   props: {
@@ -22,11 +24,7 @@ export default {
   },
   computed: {
     formattedDate() {
-      return new Date(this.post.date).toLocaleDateString('default', {
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric'
-      })
+      return blog.formatPostDate(this.post.date)
     }
   }
 }

@@ -1,3 +1,5 @@
+import blog from './utils/blog'
+
 export default {
   target: 'static',
   mode: 'universal',
@@ -89,11 +91,9 @@ export default {
     extend(config, ctx) {}
   },
   generate: {
-    async routes() {
+    routes() {
       const { $content } = require('@nuxt/content')
-      const files = await $content('blog').fetch()
-
-      return files.map((file) => (file.path === '/index' ? '/' : file.path))
+      return blog.buildBlogRoutes($content)
     }
   }
 }

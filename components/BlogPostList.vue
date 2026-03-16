@@ -29,6 +29,7 @@
 
 <script>
 import BlogPostPreview from '~/components/BlogPostPreview'
+import blog from '~/utils/blog'
 
 export default {
   name: 'BlogPostList',
@@ -51,17 +52,13 @@ export default {
   },
   computed: {
     filteredList() {
-      return this.list
-        .filter((item) => {
-          const isBlogPost = item.path.includes('/blog/')
-          const isReadyToPublish = new Date(item.date) <= new Date()
-          const hasTags = item.tags && item.tags.includes(this.selectedTag)
+      const posts = blog.getPublishedPosts(this.list)
 
-          return this.selectedTag
-            ? isBlogPost && isReadyToPublish && hasTags
-            : isBlogPost && isReadyToPublish
-        })
-        .sort((a, b) => new Date(b.date) - new Date(a.date))
+      return this.selectedTag
+        ? posts.filter(
+            (item) => item.tags && item.tags.includes(this.selectedTag)
+          )
+        : posts
     }
   },
   methods: {
