@@ -94,6 +94,7 @@ import LinkGrid from '~/components/editorial/LinkGrid.vue'
 import PageHero from '~/components/editorial/PageHero.vue'
 import PageOutro from '~/components/editorial/PageOutro.vue'
 import SectionRail from '~/components/editorial/SectionRail.vue'
+import blog from '~/utils/blog'
 
 export default {
   name: 'Home',
@@ -105,12 +106,7 @@ export default {
     SectionRail
   },
   async asyncData({ $content }) {
-    const posts = await $content('blog').fetch()
-    const latestPosts = posts
-      .filter((item) => new Date(item.date) <= new Date())
-      .sort((a, b) => new Date(b.date) - new Date(a.date))
-      .slice(0, 3)
-
+    const latestPosts = await blog.fetchLatestBlogPosts($content)
     return { latestPosts }
   },
   data() {
@@ -157,11 +153,7 @@ export default {
   },
   methods: {
     formatDate(date) {
-      return new Date(date).toLocaleDateString('default', {
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric'
-      })
+      return blog.formatPostDate(date)
     }
   }
 }

@@ -2,10 +2,6 @@
 
 This personal site is the home of my newsletter archive, blog posts, past work, and other miscellany.
 
-## Ben's Blog Boilerplate
-
-The blog portion of this website, was a fork of [bencodezen.io](https://www.bencodezen.io).
-
 ## Technology Stack
 
 - Framework: [Vue.js](https://www.vuejs.org)
@@ -14,6 +10,14 @@ The blog portion of this website, was a fork of [bencodezen.io](https://www.benc
 - Deployment: [Netlify](https://www.netlify.com)
 - CSS Pre-processor: [Sass](https://sass-lang.com/)
 - CSS Framework: [TailwindCSS](https://tailwindcss.com/)
+
+## Blog Architecture
+
+The journal is fully contained in this repo:
+
+- Posts live in `content/blog/` as Markdown with frontmatter.
+- Shared blog query and formatting logic lives in `utils/blog.js`.
+- `pages/blog/index.vue`, `pages/blog/_slug.vue`, `pages/index.vue`, and static route generation all use the same local helper layer.
 
 ## Build Setup
 
