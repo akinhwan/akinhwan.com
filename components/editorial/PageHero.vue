@@ -89,9 +89,22 @@ export default {
   background: var(--ink);
 }
 
+html[data-theme='dark'] .page-hero__cta {
+  color: var(--bg);
+  // background: var(--ink);
+}
+
 .page-hero__cta:hover {
   background: var(--accent);
 }
+
+// .page-hero__cta.nuxt-link-active {
+//   background: var(--accent);
+// }
+
+// html[data-theme='dark'] .page-hero__cta.nuxt-link-active {
+//   background: var(--accent);
+// }
 
 .page-hero__media-wrap {
   border-radius: var(--radius-md);

@@ -4,7 +4,7 @@
       <div class="site-footer__about">
         <p class="eyebrow">Andrew Kim</p>
         <p class="site-footer__lede">
-          Builder, writer, and designer based in Redwood City. I share projects,
+          Builder, writer, and designer based in Northern Virginia. I share projects,
           ideas, and learning notes across this site.
         </p>
       </div>

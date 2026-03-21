@@ -92,7 +92,7 @@
                 I'm a Developer & Designer
                 <!-- <br> Building in public my side-hustles. -->
                 <br />
-                based in Redwood City, California.
+                based in Northern Virginia, California.
               </p>
               <!-- <div class="mb-8 mt-2 font-architects-daughter text-l text-gray-400 mb-2">based in Northern Virginia, USA.</div> -->
               <div class="max-w-xs mx-auto sm:max-w-none sm:flex">

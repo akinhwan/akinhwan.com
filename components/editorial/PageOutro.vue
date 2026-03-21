@@ -79,6 +79,11 @@ export default {
   background: var(--ink);
 }
 
+html[data-theme='dark'] .page-outro__action {
+  color: var(--bg);
+  /* background: var(--ink); */
+}
+
 .page-outro__action:hover {
   background: var(--accent);
 }
@@ -94,4 +99,8 @@ export default {
   border-color: var(--accent);
   background: #fff;
 }
+
+/* html[data-theme='dark'] .page-outro__action--ghost:hover {
+  background: var(--bg);
+} */
 </style>
