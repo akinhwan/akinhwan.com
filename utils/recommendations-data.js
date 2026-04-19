@@ -244,17 +244,13 @@ export const recommendationPages = {
         href: 'https://www.one-tab.com/page/JfGfJ1q7ReWgJ8xT1u85uA'
       },
       {
-        title: 'https://www.one-tab.com/page/5XhcbL_tTnGe7dqhMizcvg',
+        title: 'Tesselations',
         href: 'https://www.one-tab.com/page/5XhcbL_tTnGe7dqhMizcvg'
       },
       {
-        title: 'https://www.one-tab.com/page/J8QegyMmRP-005VY7LdBBQ',
+        title: 'WebGL',
         href: 'https://www.one-tab.com/page/J8QegyMmRP-005VY7LdBBQ'
       },
-      {
-        title: 'wwwwwwwwwwwwwwwww',
-        href: 'wwwwwwwwwwwwwwwww'
-      }
     ],
     embeds: []
   },
